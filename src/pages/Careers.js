@@ -1,10 +1,12 @@
 import React from 'react';
+import logoimg from '../assets/logo.jpg'
+
 
 const Careers = () => (
   <div className="page careers">
     <h2>Careers</h2>
     <p>Join our team! We are hiring for positions in various departments.</p>
-    <img src="/path/to/careers.jpg" alt="Careers" className="careers-image" />
+    <img src={logoimg} alt="Careers" className="careers-image" />
   </div>
 );
 
