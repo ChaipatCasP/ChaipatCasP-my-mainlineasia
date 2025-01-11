@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
 import './styles.css';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
