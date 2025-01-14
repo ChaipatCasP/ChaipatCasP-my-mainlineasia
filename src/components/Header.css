@@ -1,0 +1,120 @@
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    /* padding: 1em 0; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 1em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 0.5em 0;
+    }
+
+    .navbar {
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .menu {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+    }
+
+    .navbar .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .navbar .menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    .menu.open {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .navbar .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        padding: 1em;
+        flex-direction: column;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+}
+
+.language-toggle {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+
+.language-toggle button {
+    background-color: transparent;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.language-toggle button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* .language-img {
+    width: 30px;
+} */
+

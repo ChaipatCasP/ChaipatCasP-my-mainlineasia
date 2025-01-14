@@ -4,7 +4,6 @@ import '../components/Footer.css';
 const Footer = () => (
   <footer className="footer">
     <p>&copy; 2025 Main Line Asia. All rights reserved.</p>
-    <p>&copy; 2025 Main Line Asia. All rights reserved.</p>
   </footer>
 );
 
