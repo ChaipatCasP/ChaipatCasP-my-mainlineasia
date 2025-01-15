@@ -1,8 +1,27 @@
-.footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f1f1f1;
+/* .footer {
     position: fixed;
-    bottom: 0;
+    bottom: -25px;
     width: 100%;
+  } */
+
+  .footer {
+    background-color: #00274d;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
   }
+  
+  .footer div {
+    margin: 10px 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #1e90ff;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    color: white;
+  }
+  

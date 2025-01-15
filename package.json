@@ -4,13 +4,19 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "i18next": "^24.2.1",
+    "i18next-browser-languagedetector": "^8.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-helmet-async": "^2.0.5",
+    "react-i18next": "^15.4.0",
     "react-scripts": "5.0.1",
+    "typescript": "^5.7.3",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "prettier": "3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
