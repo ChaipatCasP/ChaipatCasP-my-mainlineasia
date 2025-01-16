@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './styles.css';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -10,11 +10,11 @@ import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer';
 
 const App = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  // const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setMenuOpen(!isMenuOpen);
+  // };
 
   return (
     <div className="app">

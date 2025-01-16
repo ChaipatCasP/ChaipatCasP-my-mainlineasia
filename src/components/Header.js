@@ -56,7 +56,7 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a>
+          <a href="#home">
           <div className="language-toggle">
               <button onClick={() => changeLanguage("en")}>
                 <img src={img_en} alt="en" className="language-img" /> อังกฤษ
