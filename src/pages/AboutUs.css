@@ -1,45 +1,62 @@
 .about-us {
-  width: 100%;
   padding: 50px 20px;
-  text-align: center;
-  background: url('../assets/images/bg.jpeg') no-repeat center center/cover;
-  color: white;
-  /* ใช้สีตัวอักษรที่เหมาะสมกับพื้นหลัง */
+  background-color: #ffffff;
   background: linear-gradient(135deg, #00274d, #0056b3);
+  color: white;
+  text-align: center;
+  width: 100%;
+  overflow:auto;
+
 }
 
 .about-us h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: white;
-  /* สีขาวเพื่อความชัดเจน */
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.about-us p {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  font-size: 1.2rem;
-  color: #f0f0f0;
-  /* สีอักษรที่อ่านง่าย */
-}
-
-.sections {
+/* .about-us-cards {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
 }
 
-
-.section {
-  background: white;
+.about-us-card {
+  background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  max-width: 300px;
+  width: 300px;
+  text-align: center;
+} */
+
+.about-us-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; /* Align items to the start */
+  max-width: 100%; /* Limit the container width */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px; /* Add padding for better appearance */
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.section:hover {
-  transform: translateY(-5px);
+.about-us-card {
+  min-width: 250px; /* Set a minimum width for cards */
+  max-width: 300px; /* Optional: limit the card size */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-us-card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio of images */
+  border-radius: 10px;
+}
+
+.about-us-card:hover {
+  transform: scale(1.05);
   transition: all 0.3s;
 }
