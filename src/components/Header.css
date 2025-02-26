@@ -1,24 +1,23 @@
 /* Navbar styling */
 .navbar {
-    /* width: 100%;
-    background-color: #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00274d;
-    /* padding: 10px 20px; */
-    color: white;
-    position: sticky;
+    position: fixed; /* Navbar ติดอยู่ด้านบน */
     top: 0;
+    left: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, #00274d, #0056b3);
-    /* padding-right: 100px; */
+    padding: 10px 20px;
+    color: white;
+    transition: background 0.3s ease-in-out;
+    background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
 
+}
 
+.navbar.scrolled {
+    background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+    backdrop-filter: blur(10px); /* เพิ่มความเบลอให้ดูสวยงาม */
 }
 
 .navbar .logo {
@@ -30,7 +29,6 @@
     display: flex;
     justify-content: center;
     list-style: none;
-
 }
 
 .navbar ul li {
@@ -53,13 +51,11 @@
 }
 
 .language-toggle {
-    top: 14px;
-    right: 20px;
+    position: relative;
 }
 
 .language-toggle button {
     background-color: transparent;
-    /* border: 1px solid #fff; */
     color: #fff;
     padding: 5px 10px;
     margin-left: 5px;
@@ -71,48 +67,15 @@
     color: #333;
 }
 
-#home,
-#about,
-#business,
-#projects,
-#careers,
-#contact {
-    scroll-margin-top: 40px;
-    /* ปรับให้พอดีกับ header */
-}
-
-
 /* Responsive styles */
 @media (max-width: 768px) {
-
     .navbar ul {
         flex-direction: column;
-        background: linear-gradient(30deg, #00274d, #0056b3);
+        background: rgba(0, 39, 77, 0.9);
     }
 
     .navbar li {
         margin: 0.5em 0;
-    }
-
-    .navbar {
-        background-color: #333;
-        color: white;
-        /* padding: 1em; */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .navbar .menu {
-        list-style: none;
-        display: flex;
-        gap: 1em;
-    }
-
-    .navbar .menu a {
-        color: white;
-        text-decoration: none;
-        font-size: 1em;
     }
 
     .navbar .menu-toggle {
@@ -121,67 +84,25 @@
         font-size: 35px;
     }
 
-    .navbar .menu.open {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
-
     .navbar .menu {
         display: none;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #333;
+        background-color: rgba(0, 39, 77, 0.9);
         padding: 1em;
         flex-direction: column;
         border-radius: 0 0 8px 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-
-    /* .language-toggle {
-        align-items: center;
-        position: absolute;
-        top: 14px;
-        right: 20px;
+    .navbar .menu.open {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
     }
-
-    .language-toggle button {
-        background-color: transparent;
-        color: #fff;
-        padding: 5px 10px;
-        margin-left: 5px;
-        cursor: pointer;
-    }
-
-    .language-toggle button:hover {
-        background-color: #fff;
-        color: #333;
-    } */
 
     .language-toggle {
-        top: 14px;
-        right: 20px;
         position: unset;
     }
-
-    .language-toggle button {
-        background-color: transparent;
-        color: #fff;
-        padding: 5px 10px;
-        margin-left: 5px;
-        cursor: pointer;
-    }
-
-    .language-toggle button:hover {
-        background-color: #fff;
-        color: #333;
-    }
-
 }
-
-
-/* .language-img {
-    width: 30px;
-} */

@@ -3,10 +3,11 @@ import "./Header.css";
 import img_en from "../assets/us.png";
 import img_th from "../assets/th.png";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
+import LanguageToggle from "./LanguageToggle"
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const { t, i18n } = useTranslation(); // ใช้ i18n ในการจัดการภาษา
+  const { t, i18n } = useTranslation(); 
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -57,14 +58,15 @@ const Header = () => {
         </li>
         <li>
           <a href="#home">
-          <div className="language-toggle">
+          {/* <div className="language-toggle">
               <button onClick={() => changeLanguage("en")}>
                 <img src={img_en} alt="en" className="language-img" /> อังกฤษ
               </button>
               <button onClick={() => changeLanguage("th")}>
                 <img src={img_th} alt="th" className="language-img" /> ไทย
               </button>
-            </div>
+            </div> */}
+            <LanguageToggle changeLanguage={changeLanguage}/>
           </a>
         </li>
       </ul>

@@ -13,6 +13,7 @@ const resources = {
       refprojects: "Project References",
       careers: "Careers",
       contact: "Contact Us",
+      hometxtbanner:"Connect to public electric trains.",
     },
   },
   th: {
@@ -25,6 +26,7 @@ const resources = {
       refprojects: "ตัวอย่างโครงการ",
       careers: "ร่วมงานกับเรา",
       contact: "ติดต่อเรา",
+      hometxtbanner:"เชื่อมต่อรถไฟฟ้าโดยสารสาธารณะด้วยพลังงานไฟฟ้า"
     },
   },
 };

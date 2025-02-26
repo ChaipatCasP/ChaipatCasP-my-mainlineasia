@@ -1,4 +1,50 @@
-.about-us {
+.aboutus-container {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  /* height: 100vh; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+  transition: background 0.3s ease-in-out;
+}
+
+.aboutus-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.5; /* ทำให้รูปโปร่งใส */
+  mix-blend-mode: overlay; /* ทำให้กลืนกับพื้นหลัง */
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.aboutus-text {
+  top: 50px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* padding: 20px 30px; */
+  border-radius: 10px;
+  width: 100%;
+}
+
+.aboutus-items{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.aboutus-item {
+  border: solid 1px;
+  width: 350px;
+  height: 500px;
+}
+
+/* .about-us {
   padding: 50px 20px;
   background-color: #ffffff;
   background: linear-gradient(135deg, #00274d, #0056b3);
@@ -15,36 +61,33 @@
   margin-bottom: 40px;
 }
 
-/* .about-us-cards {
+
+.about-us-cards1 {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  overflow-x: auto;
+  justify-content: flex-start; 
+  max-width: 100%; 
+  overflow-x: auto; 
+  padding: 10px; 
+  box-sizing: border-box; 
 }
-
-.about-us-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-} */
 
 .about-us-cards {
   display: flex;
   gap: 20px;
-  justify-content: flex-start; /* Align items to the start */
-  max-width: 100%; /* Limit the container width */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  padding: 10px; /* Add padding for better appearance */
-  box-sizing: border-box; /* Include padding in width calculations */
+  justify-content: flex-start; 
+  flex-wrap: wrap; 
+  max-width: 100%; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  overflow: hidden; 
 }
 
+
 .about-us-card {
-  min-width: 250px; /* Set a minimum width for cards */
-  max-width: 300px; /* Optional: limit the card size */
-  flex-shrink: 0; /* Prevent cards from shrinking */
+  min-width: 250px; 
+  max-width: 300px; 
+  flex-shrink: 0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -52,11 +95,11 @@
 
 .about-us-card img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio of images */
+  height: auto; 
   border-radius: 10px;
 }
 
 .about-us-card:hover {
   transform: scale(1.05);
   transition: all 0.3s;
-}
+} */
