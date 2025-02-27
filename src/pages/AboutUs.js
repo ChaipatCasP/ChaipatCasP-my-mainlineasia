@@ -1,7 +1,7 @@
 import React from "react";
 // import banner_en from "../assets/images/banner-en.jpg";
 // import banner_th from "../assets/images/banner-th.jpg";
-import { useTranslation } from "react-i18next"; // หากใช้ i18next
+// import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import "./AboutUs.css";
 import Train from "../assets/images/bg.jpeg";
