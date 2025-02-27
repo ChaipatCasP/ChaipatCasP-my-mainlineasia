@@ -7,7 +7,7 @@ import "./Home.css";
 import Train from "../assets/images/Train.png";
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   // const images = {
   //   en: banner_en,

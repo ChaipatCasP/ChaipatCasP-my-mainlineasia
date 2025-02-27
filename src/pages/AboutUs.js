@@ -10,7 +10,7 @@ import vector2 from "../assets/images/Vector-2.png";
 import vector3 from "../assets/images/Vector-3.png";
 
 const AboutUs = () => {
-  const { t, i18n } = useTranslation();
+  // const { t, i18n } = useTranslation();
 
   // const images = {
   //   en: banner_en,
@@ -56,7 +56,7 @@ const AboutUs = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "80px" }}>
-                <img src={vector1} />
+                <img src={vector1} alt="card" />
               </div>
               <div>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
@@ -79,7 +79,7 @@ const AboutUs = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "80px" }}>
-                <img src={vector2} />
+                <img src={vector2} alt="card"/>
               </div>
               <div>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
@@ -102,7 +102,7 @@ const AboutUs = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "80px" }}>
-                <img src={vector3} />
+                <img src={vector3} alt="card"/>
               </div>
               <div>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>

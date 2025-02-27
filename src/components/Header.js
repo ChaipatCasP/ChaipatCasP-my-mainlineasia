@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Header.css";
-import img_en from "../assets/us.png";
-import img_th from "../assets/th.png";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 import LanguageToggle from "./LanguageToggle"
 
