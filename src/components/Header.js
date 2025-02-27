@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 import LanguageToggle from "./LanguageToggle"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -24,49 +25,18 @@ const Header = () => {
         ☰
       </div>
       <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
-        <li>
-          <a href="#home" onClick={toggleMenu}>
-            {t("home")}
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={toggleMenu}>
-            {t("about")}
-          </a>
-        </li>
-        <li>
-          <a href="#business" onClick={toggleMenu}>
-            {t("ourbusiness")}
-          </a>
-        </li>
-        <li>
-          <a href="#projects" onClick={toggleMenu}>
-            {t("refprojects")}
-          </a>
-        </li>
-        <li>
-          <a href="#careers" onClick={toggleMenu}>
-            {t("careers")}
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={toggleMenu}>
-            {t("contact")}
-          </a>
-        </li>
-        <li>
-          <a href="#home">
-          {/* <div className="language-toggle">
-              <button onClick={() => changeLanguage("en")}>
-                <img src={img_en} alt="en" className="language-img" /> อังกฤษ
-              </button>
-              <button onClick={() => changeLanguage("th")}>
-                <img src={img_th} alt="th" className="language-img" /> ไทย
-              </button>
-            </div> */}
+
+      <li><Link to="/">{t("home")}</Link></li>
+        <li><Link onClick={toggleMenu} to="/about">{t("about")}</Link></li>
+        <li><Link onClick={toggleMenu} to="/business">{t("ourbusiness")}</Link></li>
+        <li><Link onClick={toggleMenu} to="/projects">{t("refprojects")}</Link></li>
+        <li><Link onClick={toggleMenu} to="/careers">{t("careers")}</Link></li>
+        <li><Link onClick={toggleMenu} to="/contact">{t("contact")}</Link></li>
+
+        <li style={{cursor:"pointer"}}>
             <LanguageToggle changeLanguage={changeLanguage}/>
-          </a>
         </li>
+
       </ul>
       {/* ตัวสลับภาษา */}
     </nav>
