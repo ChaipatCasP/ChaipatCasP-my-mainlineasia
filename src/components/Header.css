@@ -4,20 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Navbar ติดอยู่ด้านบน */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 10px 20px;
     color: white;
     transition: background 0.3s ease-in-out;
     background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
-
 }
 
 .navbar.scrolled {
     background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
-    backdrop-filter: blur(10px); /* เพิ่มความเบลอให้ดูสวยงาม */
+    backdrop-filter: blur(10px);
+    /* เพิ่มความเบลอให้ดูสวยงาม */
 }
 
 .navbar .logo {

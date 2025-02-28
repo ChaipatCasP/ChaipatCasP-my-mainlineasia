@@ -8,7 +8,7 @@ import './i18n'; // import การตั้งค่า i18n ที่เร�
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <title>My Multilingual Page</title>
+    <title>Mainline Asia</title>
     <meta name="description" content="This is a multilingual website." />
     <meta name="keywords" content="SEO, multilingual, website" />
     <meta property="og:locale" content="en_US" />

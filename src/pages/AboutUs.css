@@ -7,16 +7,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
   transition: background 0.3s ease-in-out;
+  /* background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1)); */
+  background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+  margin-top: 82px;
 }
 
 .aboutus-image {
   width: 100%;
   height: auto;
-  opacity: 0.5; /* ทำให้รูปโปร่งใส */
-  mix-blend-mode: overlay; /* ทำให้กลืนกับพื้นหลัง */
+  opacity: 0.5;
+  /* ทำให้รูปโปร่งใส */
+  mix-blend-mode: overlay;
+  /* ทำให้กลืนกับพื้นหลัง */
   transition: opacity 0.3s ease-in-out;
+  
 }
 
 
@@ -32,7 +37,7 @@
   width: 100%;
 }
 
-.aboutus-items{
+.aboutus-items {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
