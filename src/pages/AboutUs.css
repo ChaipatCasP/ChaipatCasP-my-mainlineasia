@@ -12,6 +12,45 @@
   font-size: 20px;
 }
 
+.aboutus-text-header{
+  display:flex;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.aboutus-text-header1{
+  width: 40%;
+  padding:50px 30px 0 30px;
+}
+
+.aboutus-text-header2{
+  width: 55%;
+  text-align: left;
+}
+
+.aboutus-text-header3{
+  width: 5%;
+}
+
+.ourvision{
+  display: flex;
+  text-align: center;
+}
+
+.ourvision1{
+  width: 40%;
+  padding: 50px 30px 0 30px;
+}
+
+.ourvision2 {
+  width: 55%;
+  text-align: left;
+}
+
+.ourvision3 {
+  width: 5px;
+}
+
 .aboutus-items {
   display: flex;
   justify-content: space-evenly;
@@ -93,3 +132,152 @@
     color: black;
   }
 
+
+    @media (max-width: 768px) {
+
+      .aboutus-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+      }
+      
+      .aboutus-container .aboutus-text {
+        border-radius: 10px;
+        width: 100%;
+        font-size: 15px;
+
+      }
+
+      .aboutus-text-header{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .aboutus-text-header1{
+        width: 100% !important;
+        padding:10px 0 0 0;
+      }
+      
+      .aboutus-text-header2{
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .aboutus-text-header2 img{
+        width:80% !important;
+        text-align: center !important;
+      }
+      
+      .aboutus-text-header3{
+        width: 100% !important;
+      }
+      
+      .ourvision{
+        display: flex;
+        text-align: center;
+      }
+      
+      .ourvision1{
+        width: 9%;
+        padding: 30px 30px 0 30px;
+      }
+      .ourvision1 h2{
+        font-size: 20px;
+      }
+      
+      .ourvision2 {
+        width: 90%;
+        text-align: left;
+        font-size: 12px;
+      }
+      
+      .ourvision3 {
+        width: 1%;
+      }
+      
+      .aboutus-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 20px;
+        
+      }
+      
+      .aboutus-item {
+        width: 90% !important;
+        height: 370px;
+        background: #f9f9f9;
+        padding: 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+        margin: 10px;
+      }
+      
+      .aboutus-item:hover {
+        transform: scale(1.05);
+        transition: all 0.3s;
+      }
+      
+      .aboutus-item .border-header {
+        height: 80px;
+        padding-top: 25px;
+        padding: 25px 20px 0 20px;
+        }
+        
+        .aboutus-item-header{
+          font-size: 20px;
+          font-weight: 700;
+        }
+        
+        .aboutus-item-footer{
+          font-size: 14px;
+          font-weight: 400;
+        }
+      
+        .aboutus-items-no-img {
+          display: flex;
+          justify-content: center;
+          flex-wrap:wrap;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      
+      .aboutus-item-no-img-header{
+        padding: 10px 0 0 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .aboutus-item-no-img-footer {
+        padding: 10px 15px 15px 15px;
+        font-size: 14px;
+      }
+      
+        .aboutus-item-no-img{
+          margin: 20px;
+          background: #f9f9f9;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          width: 300px;
+          text-align: center;
+        }
+      
+        .aboutus-item-no-img:hover {
+          transform: scale(1.05);
+          transition: all 0.3s;
+        }
+      
+      
+        .link-button {
+          text-decoration: none;
+          cursor: pointer;
+          color: black;
+        }        
+
+    }

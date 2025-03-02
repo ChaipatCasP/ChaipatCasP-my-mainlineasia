@@ -22,41 +22,35 @@ const AboutUs = () => {
     <div>
       <div className="aboutus-container">
         <div className="aboutus-text">
-          <div
-            style={{
-              display: "flex",
-              textAlign: "center",
-              paddingTop: "100px",
-            }}
-          >
-            <div style={{ width: "40%", padding: "50px 30px 0 30px" }}>
+          <div className="aboutus-text-header">
+            <div className="aboutus-text-header1" >
               <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>{t("about")}</h2>
               <div style={{ padding: "20px" }}>{t("about_Detail")}</div>
             </div>
 
-            <div style={{ width: "55%", textAlign: "left" }}>
+            <div className="aboutus-text-header2"  >
               <img src={Train} alt="bg" />
             </div>
 
-            <div style={{ width: "5%" }}></div>
+            <div className="aboutus-text-header3" ></div>
           </div>
 
-          <div style={{ display: "flex", textAlign: "center" }}>
-            <div style={{ width: "40%", padding: "50px 30px 0 30px" }}>
+          <div className="ourvision"  >
+            <div className="ourvision1" >
               <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
                 {t("ourvision")}
               </h2>
             </div>
 
-            <div style={{ width: "55%", textAlign: "left" }}>
+            <div className="ourvision2" >
               <div style={{ padding: "20px" }}>{t("ourvision_Detail")}</div>
             </div>
 
-            <div style={{ width: "5%" }}></div>
+            <div className="ourvision3"></div>
           </div>
 
           <div className="aboutus-items">
-             <Link to="/about-railway?id=1" className="link-button">
+            <Link to="/about-railway?id=1" className="link-button">
               <div className="aboutus-item" id="1">
                 <div className="border-header">
                   <label className="aboutus-item-header">
@@ -109,7 +103,6 @@ const AboutUs = () => {
                 </div>
               </div>
             </Link>
-
           </div>
 
           <div

@@ -27,13 +27,12 @@ const AboutUsRailway = () => {
   return (
     <div>
       <div id="1" style={{ display: "none" }}>
-        <div
-          style={{ display: "flex", textAlign: "center", paddingTop: "100px" }}
-        >
-          <div style={{ width: "50%", padding: "0 30px 0 30px" }}>
-            <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>High-Performance Railway Power Supply
+        <div className="aboutus-railway">
+          <div className="aboutus-railway1">
+            <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
+              High-Performance Railway Power Supply
             </h2>
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div className="aboutus-railway1-details">
               <div
                 style={{
                   display: "flex",
@@ -88,21 +87,21 @@ const AboutUsRailway = () => {
             </div>
           </div>
 
-          <div style={{ width: "45%", textAlign: "left" }}>
+          <div className="aboutus-railway2">
             <img src={Train} alt="bg" />
           </div>
 
-          <div style={{ width: "5%" }}></div>
+          <div className="aboutus-railway3"></div>
         </div>
       </div>
 
       <div id="2" style={{ display: "none" }}>
-        <div
-          style={{ display: "flex", textAlign: "center", paddingTop: "100px" }}
-        >
-          <div style={{ width: "50%", padding: "0 30px 0 30px" }}>
-            <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>Advanced Energy Storage</h2>
-            <div style={{ display: "flex", flexDirection: "column" }}>
+        <div className="aboutus-railway">
+          <div className="aboutus-railway1">
+            <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
+              Advanced Energy Storage
+            </h2>
+            <div className="aboutus-railway1-details">
               <div
                 style={{
                   display: "flex",
@@ -117,16 +116,6 @@ const AboutUsRailway = () => {
                   value chain and solid capabilities across manufacturing,
                   distribution with our partner for all solution
                 </label>
-              </div>
-
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  textAlign: "left",
-                  paddingTop: "10px",
-                }}
-              >
                 <label>Traction Substations:</label>
                 <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
                   • Residential Energy Storage Solutions.
@@ -141,66 +130,60 @@ const AboutUsRailway = () => {
             </div>
           </div>
 
-          <div style={{ width: "45%", textAlign: "left" }}>
+          <div className="aboutus-railway2">
             <img src={Train} alt="bg" />
           </div>
 
-          <div style={{ width: "5%" }}></div>
+          <div className="aboutus-railway3"></div>
         </div>
       </div>
-
       <div id="3" style={{ display: "none" }}>
+  <div className="aboutus-railway">
+    <div className="aboutus-railway1">
+      <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
+        Robust EV Charging Networks
+      </h2>
+      <div className="aboutus-railway1-details">
         <div
-          style={{ display: "flex", textAlign: "center", paddingTop: "100px" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            textAlign: "left",
+            paddingTop: "10px",
+          }}
         >
-          <div style={{ width: "50%", padding: "0 30px 0 30px" }}>
-            <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>Robust EV Charging Networks</h2>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  textAlign: "left",
-                  paddingTop: "10px",
-                }}
-              >
-                <label style={{ paddingBottom: "10px" }}>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides customized EV Charger solutions with a complete solution.
-                </label>
-              </div>
-
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  textAlign: "left",
-                  paddingTop: "10px",
-                }}
-              >
-                <label>Traction Substations:</label>
-                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Fast-Charging Stations: Compatibility with all major EV models.
-                </label>
-                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Smart Charging Solutions: IoT-enabled monitoring, billing, and load  management.
-                </label>
-                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Green Energy Integration: Options for on-site solar or wind power to reduce carbon footprint.
-                </label>
-                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Tailored Implementations: Urban, highway, and fleet charging solutions for diverse customer requirements.
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div style={{ width: "45%", textAlign: "left" }}>
-            <img src={Train} alt="bg" />
-          </div>
-
-          <div style={{ width: "5%" }}></div>
+          <label style={{ paddingBottom: "10px" }}>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides
+            customized EV Charger solutions with a complete solution.
+          </label>
+          <label>Traction Substations:</label>
+          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+            • Fast-Charging Stations: Compatibility with all major EV
+            models.
+          </label>
+          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+            • Smart Charging Solutions: IoT-enabled monitoring, billing,
+            and load management.
+          </label>
+          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+            • Green Energy Integration: Options for on-site solar or wind
+            power to reduce carbon footprint.
+          </label>
+          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+            • Tailored Implementations: Urban, highway, and fleet charging
+            solutions for diverse customer requirements.
+          </label>
         </div>
       </div>
+    </div>
+
+    <div className="aboutus-railway2">
+      <img src={Train} alt="bg" />
+    </div>
+
+    <div className="aboutus-railway3"></div>
+  </div>
+</div>
 
       <div>&nbsp;</div>
     </div>
