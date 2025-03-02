@@ -10,6 +10,8 @@ import ProjectReferences from "./pages/ProjectReferences";
 import Careers from "./pages/Careers";
 import ContactUs from "./pages/ContactUs";
 
+import AboutUsRailway from "./pages/AboutUsRailway";
+
 const App = () => {
   return (
     <Router>
@@ -18,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/about-railway" element={<AboutUsRailway />} /> 
           <Route path="/business" element={<OurBusiness />} />
           <Route path="/projects" element={<ProjectReferences />} />
           <Route path="/careers" element={<Careers />} />

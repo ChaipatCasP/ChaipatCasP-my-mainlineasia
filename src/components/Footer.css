@@ -25,3 +25,15 @@
 .footer-img-right{
   width: 50px;
 }
+
+.footer-botton {
+ display: flex;
+  background: linear-gradient(0deg, #4A66AC, #4A66AC),linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.footer-botton-right{
+ display: flex;
+  flex-wrap: nowrap;
+ justify-content: space-evenly;
+
+}

@@ -1,4 +1,5 @@
 .home{
+  background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
   width: 100%;
 }
 
@@ -32,4 +33,65 @@
   .hero-image {
     width: 100%;
     height: 100%;
+  }
+
+
+  .home-aboutus-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+    background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+  }
+
+  .home-aboutus-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    transition: opacity 0.3s ease-in-out;
+    
+  }
+
+  .home-aboutus-container .aboutus-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+
+  .home-aboutus-items {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+  
+  .home-aboutus-item {
+    border: solid 1px;
+    width: 300px;
+    height: 400px;
+  }
+
+.home-aboutus-item .border-header {
+  border: solid 1px;
+  height: 80px;
+  padding-top: 25px;
+  padding: 25px 20px 0 20px;
+}
+
+
+  .home-aboutus-item-header{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .home-aboutus-item-footer{
+    font-size: 16px;
+    font-weight: 400;
   }

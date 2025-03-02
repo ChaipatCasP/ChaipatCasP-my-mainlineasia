@@ -1,0 +1,67 @@
+.ourbusiness-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* display: flex; */
+  }
+  
+  .ourbusiness-container .ourbusiness-header {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+.ourbusiness-header-details {
+    padding: 20px 200px 20px 200px;
+}
+
+.ourbusiness-footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างช่อง */
+  justify-content: center;
+  justify-items:center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.ourbusiness-footer-item {
+  border: solid 1px;
+  border-radius: 10px;
+  width: 600px;
+  height: 600px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 1);
+}
+
+.ourbusiness-footer-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างช่อง */
+  justify-content: center;
+  justify-items:center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.ourbusiness-footer-one-item {
+  border: solid 1px;
+  border-radius: 10px;
+  width: 600px;
+  height: 600px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 1);
+}
+
+
+

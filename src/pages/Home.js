@@ -21,43 +21,34 @@ const Home = () => {
 
   return (
     <div className="home">
-
       <div className="hero">
         <img src={Train} alt="bg" className="hero-image" />
 
         <div className="hero-text">
           <h1>{t("hometxtbanner")}</h1>
-
         </div>
       </div>
 
-
-
-      <div className="aboutus-container">
-        <img src={bg2} alt="bg" className="aboutus-image" />
+      <div className="home-aboutus-container">
+        <img src={bg2} alt="bg" className="home-aboutus-image" />
         <div className="aboutus-text">
           <div style={{ display: "flex" }}>
-            <div style={{ width: "30%" }}>
+            <div style={{ width: "40%" }}>
               <h2>{t("about")}</h2>
             </div>
 
-            <div style={{ width: "65%", textAlign: "left" }}>
-              {t("about_Detail")}
+            <div style={{ width: "55%", textAlign: "left" }}>
+              <div style={{ width: "90%" }}>{t("about_Detail")}</div>
             </div>
 
             <div style={{ width: "5%" }}></div>
           </div>
 
-          <div className="aboutus-items">
-            <div className="aboutus-item">
-              <div
-                style={{
-                  border: "solid 1px",
-                  height: "130px",
-                  paddingTop: "25px",
-                }}
-              >
-                <label style={{ fontSize: "30px", width: "700" }}>
+          <div className="home-aboutus-items">
+
+            <div className="home-aboutus-item">
+              <div className="border-header">
+                <label className="home-aboutus-item-header">
                   {t("about_Card1")}
                 </label>
               </div>
@@ -65,21 +56,15 @@ const Home = () => {
                 <img src={vector1} alt="card" />
               </div>
               <div style={{ padding: "10px" }}>
-                <label style={{ fontSize: "14px", fontWeight: "400" }}>
+                <label className="home-aboutus-item-footer">
                   {t("about_Card1_footer")}
                 </label>
               </div>
             </div>
 
-            <div className="aboutus-item">
-              <div
-                style={{
-                  border: "solid 1px",
-                  height: "130px",
-                  paddingTop: "25px",
-                }}
-              >
-                <label style={{ fontSize: "30px", width: "700" }}>
+            <div className="home-aboutus-item">
+              <div className="border-header">
+                <label className="home-aboutus-item-header">
                   {t("about_Card2")}
                 </label>
               </div>
@@ -93,15 +78,9 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="aboutus-item">
-              <div
-                style={{
-                  border: "solid 1px",
-                  height: "130px",
-                  paddingTop: "25px",
-                }}
-              >
-                <label style={{ fontSize: "30px", width: "700" }}>
+            <div className="home-aboutus-item">
+              <div className="border-header">
+                <label className="home-aboutus-item-header">
                   {t("about_Card3")}
                 </label>
               </div>
@@ -114,18 +93,11 @@ const Home = () => {
                 </label>
               </div>
             </div>
+
           </div>
 
-          {/* <h1>{t("hometxtbanner")}</h1> */}
         </div>
       </div>
-
-
-
-
-
-
-
     </div>
   );
 };

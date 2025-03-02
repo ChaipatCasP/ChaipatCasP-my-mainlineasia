@@ -28,6 +28,8 @@ const resources = {
       about_Card3_footer:
         "To build scalable charging infrastructure that meets the demands of the electric vehicle revolution.",
 
+      ourvision :"Our Vistion",
+      ourvision_Detail:"To lead the Southeast Asia transition towards sustainable energy systems by delivering reliable, innovative, and efficient solutions for railway power supply, energy storage, and EV charging infrastructure.",
       ourbusiness: "Our Business & Services",
       refprojects: "Project References",
       careers: "Careers",
@@ -60,6 +62,8 @@ const resources = {
       about_Card3_footer:
         "สร้างโครงสร้างพื้นฐานด้านการชาร์จที่สามารถขยายตัวได้ รองรับการเติบโตของยานยนต์ไฟฟ้าในอนาคต",
 
+      ourvision :"วิสัยทัศน์ของเรา",
+      ourvision_Detail:"เพื่อเป็นผู้นำการเปลี่ยนแปลงในเอเชียตะวันออกเฉียงใต้ไปสู่ระบบพลังงานที่ยั่งยืนโดยมอบโซลูชันที่เชื่อถือได้ สร้างสรรค์ และมีประสิทธิภาพสำหรับแหล่งจ่ายไฟทางรถไฟ การจัดเก็บพลังงาน และโครงสร้างพื้นฐานการชาร์จรถยนต์ไฟฟ้า",
       ourbusiness: "ธุรกิจและบริการของเรา",
       refprojects: "ตัวอย่างโครงการ",
       careers: "ร่วมงานกับเรา",
