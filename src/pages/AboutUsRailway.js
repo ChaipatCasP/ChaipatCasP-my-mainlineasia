@@ -6,7 +6,7 @@ import "./AboutUsRailway.css";
 import Train from "../assets/images/bg.jpeg";
 
 const AboutUsRailway = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const location = useLocation();
 
   useEffect(() => {
