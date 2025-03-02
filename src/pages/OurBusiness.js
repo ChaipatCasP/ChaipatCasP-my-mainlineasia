@@ -1,12 +1,12 @@
 import React from 'react';
 import "./OurBusiness.css";
-import { useTranslation } from "react-i18next"; // หากใช้ i18next
+// import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 // import Train from "../assets/images/Train.png";
 
 
 const OurBusiness = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   // const images = {
   //   en: banner_en,
