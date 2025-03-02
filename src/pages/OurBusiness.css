@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    /* display: flex; */
+    background-color: red;
   }
   
   .ourbusiness-container .ourbusiness-header {
@@ -12,56 +12,250 @@
     padding-top: 100px;
     text-align: center;
   }
+
+  .ourbusiness-container .ourbusiness-header-header {
+    color: rgba(74, 102, 172, 1);
+    font-weight: bold;
+    font-size: 35px;
+  }
   
 .ourbusiness-header-details {
     padding: 20px 200px 20px 200px;
 }
 
-.ourbusiness-footer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
-  gap: 20px; /* ระยะห่างระหว่างช่อง */
-  justify-content: center;
-  justify-items:center;
-  align-items: center;
-  padding-bottom: 20px;
-}
 
-.ourbusiness-footer-item {
-  border: solid 1px;
-  border-radius: 10px;
-  width: 600px;
-  height: 600px;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(217, 217, 217, 1);
-}
 
-.ourbusiness-footer-one {
+.ourbusiness-footer-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
   gap: 20px; /* ระยะห่างระหว่างช่อง */
   justify-content: center;
   justify-items:center;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 10px 50px 10px 50px;
 }
 
-.ourbusiness-footer-one-item {
+.ourbusiness-footer-two-item {
   border: solid 1px;
   border-radius: 10px;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   color: white;
   text-align: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 1);
+
+}
+
+.ourbusiness-footer-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างช่อง */
+  justify-content: center;
+  justify-items:center;
+  align-items: center;
+  padding: 10px 50px 10px 50px;
+
+}
+
+.ourbusiness-footer-item {
+  border: solid 1px;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: rgba(217, 217, 217, 1);
 }
 
+.ourbusiness-footer-item-txt{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 100%;
+  height: 60%;
+}
+
+.ourbusiness-footer-item-txt .header{
+  font-weight: bold;
+  color: black;
+
+}
+
+.ourbusiness-footer-item-txt .detail{
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+  color: gray;
+}
+
+.ourbusiness-footer-item-txt .detail-two{
+  padding: 5px 20px 5px 20px;
+  font-size: 15px;
+  color: gray;
+
+}
+
+.ourbusiness-footer-item-img{
+  width: 100%;
+  height: 40%;
+}
+
+.ourbusiness-footer-item-img .img{
+  padding: 10px 5px 10px 5px;
+  width: 200px;
+
+}
+
+.product-txt-header{
+ padding: 5px 130px 5px 130px;
+ display: flex;
+ flex-direction: column;
+}
+
+.ourbusiness-product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap; 
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ourbusiness-product-item{
+  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 1);
+  padding: 10px;
+  margin: 20px;
+}
+
+.ourbusiness-product-item-txt{
+  font-size: large;
+  font-weight: bold;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  height: 15%;
+}
+
+.ourbusiness-product-item-img {
+  width: 100%;
+  height: 85%;
+  
+}
 
 
+
+
+
+@media (max-width: 768px) {
+  .ourbusiness-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .ourbusiness-container .ourbusiness-header {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .ourbusiness-container .ourbusiness-header-header {
+
+    color: rgba(74, 102, 172, 1);
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .ourbusiness-header-details {
+    padding: 0 20px 0 20px;
+    font-size: 14px;
+  }
+
+
+  .ourbusiness-footer-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: start;
+    justify-items:center;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    overflow-x: auto;
+  }
+
+  .ourbusiness-footer-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: start;
+    justify-items:center;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    overflow-x: auto;
+  }
+
+  .product-txt-header{
+    padding: 5px 30px 5px 30px;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .ourbusiness-product {
+     display: flex;
+     flex-direction: row;
+     flex-wrap:wrap; 
+     justify-content: center;
+     width: 100%;
+     overflow: hidden;
+   }
+   
+   .ourbusiness-product-item{
+     border-radius: 10px;
+     width: 200px;
+     height: 280px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background: rgba(217, 217, 217, 1);
+     padding: 10px;
+     margin: 20px;
+   }
+   
+   .ourbusiness-product-item-txt{
+     font-size: large;
+     font-weight: bold;
+     flex-direction: column;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     width: 100%;
+     height: 15%;
+   }
+   
+   .ourbusiness-product-item-img {
+     width: 100%;
+     height: 85%;
+     
+   }
+
+}

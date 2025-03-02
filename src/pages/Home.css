@@ -6,7 +6,7 @@
 .hero {
     position: relative;
     /* height: 80vh; */
-    background: url('../assets/images/engineer.png') no-repeat center center/cover;
+    /* background: url('../assets/images/engineer.png') no-repeat center center/cover; */
     display: flex;
     align-items: center;
     justify-content: center;

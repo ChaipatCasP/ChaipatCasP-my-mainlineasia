@@ -13,10 +13,7 @@ import map from "../assets/icon/ant-design_map.png";
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
-      <div
-        className="footer-items"
-        style={{ width: "70%", paddingLeft: "100px" }}
-      >
+      <div className="footer-items item1">
         <label style={{ fontSize: "24px", fontWeight: "bold" }}>
           {" "}
           Mainline Asia Co.,Ltd{" "}
@@ -24,13 +21,14 @@ const Footer = () => (
         <label>425 Kamphaeng Phet Rd. 6, Don Mueang,</label>
         <label>Don Mueang District, Bangkok 10210, Thailand</label>
 
-        <div style={{ display: "flex", paddingTop: "20px" }}>
+        <div className="footer-items social">
           <img className="footer-img-left" src={twitter} alt="twitter" />
           <img className="footer-img-left" src={linkedin} alt="linkedin" />
           <img className="footer-img-left" src={facebook} alt="facebook" />
         </div>
       </div>
-      <div className="footer-items" style={{ width: "30%" }}>
+
+      <div className="footer-items item2">
         <div style={{ display: "flex", paddingBottom: "20px" }}>
           <img className="footer-img-right" src={phone} alt="phone" />
           <label style={{ paddingTop: "13px", paddingLeft: "10px" }}>
@@ -58,10 +56,10 @@ const Footer = () => (
       <div style={{ width: "50%" }}>
         <label>copyright © 2025 Mainline Asia Co., Ltd </label>
       </div>
-      <div className="footer-botton-right" style={{ width: "50%"}}>
-        <div style={{cursor:'pointer'}}>Cookies Setting</div>
-        <div style={{cursor:'pointer'}}>Terms of Use</div>
-        <div style={{cursor:'pointer'}}>Privacy Notice</div>
+      <div className="footer-botton-right" style={{ width: "50%" }}>
+        <div style={{ cursor: "pointer" }}>Cookies Setting</div>
+        <div style={{ cursor: "pointer" }}>Terms of Use</div>
+        <div style={{ cursor: "pointer" }}>Privacy Notice</div>
       </div>
     </div>
   </footer>
