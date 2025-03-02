@@ -4,7 +4,7 @@ import { DownOutlined } from "@ant-design/icons";
 import img_en from "../assets/us.png";
 import img_th from "../assets/th.png";
 
-const LanguageToggle = ({ changeLanguage }) => {
+const LanguageToggle = ({ changeLanguage,toggleMenu }) => {
   const [selectedLang, setSelectedLang] = useState("en");
 
   const languages = [
@@ -15,6 +15,7 @@ const LanguageToggle = ({ changeLanguage }) => {
   const handleMenuClick = (e) => {
     setSelectedLang(e.key);
     changeLanguage(e.key);
+    toggleMenu();
   };
 
   const menu = (

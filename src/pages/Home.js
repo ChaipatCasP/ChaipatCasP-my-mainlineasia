@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import "./Home.css";
 import Train from "../assets/images/Train.png";
-import bg2 from "../assets/images/Train.png";
+// import bg2 from "../assets/images/Train.png";
 
 import vector1 from "../assets/images/Vector-1.png";
 import vector2 from "../assets/images/Vector-2.png";
@@ -25,12 +25,13 @@ const Home = () => {
         <img src={Train} alt="bg" className="hero-image" />
 
         <div className="hero-text">
-          <h1>{t("hometxtbanner")}</h1>
+          <label>{t("hometxtbanner")}</label>
         </div>
       </div>
 
       <div className="home-aboutus-container">
-        <img src={bg2} alt="bg" className="home-aboutus-image" />
+        {/* <img src={bg2} alt="bg" className="home-aboutus-image" /> */}
+        
         <div className="aboutus-text">
           <div style={{ display: "flex" }}>
             <div style={{ width: "40%" }}>
