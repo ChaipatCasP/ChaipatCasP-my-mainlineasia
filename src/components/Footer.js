@@ -14,12 +14,9 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
       <div className="footer-items item1">
-        <label style={{ fontSize: "24px", fontWeight: "bold" }}>
-          {" "}
-          Mainline Asia Co.,Ltd{" "}
-        </label>
-        <label>425 Kamphaeng Phet Rd. 6, Don Mueang,</label>
-        <label>Don Mueang District, Bangkok 10210, Thailand</label>
+        <label className="item1-header">Mainline Asia Co.,Ltd</label>
+        <label className="item1-detail">425 Kamphaeng Phet Rd. 6, Don Mueang,</label>
+        <label className="item1-detail">Don Mueang District, Bangkok 10210, Thailand</label>
 
         <div className="footer-items social">
           <img className="footer-img-left" src={twitter} alt="twitter" />
@@ -29,23 +26,23 @@ const Footer = () => (
       </div>
 
       <div className="footer-items item2">
-        <div style={{ display: "flex", paddingBottom: "20px" }}>
+        <div style={{ display: "flex", paddingBottom: "10px" }}>
           <img className="footer-img-right" src={phone} alt="phone" />
-          <label style={{ paddingTop: "13px", paddingLeft: "10px" }}>
+          <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
             +66 656838126
           </label>
         </div>
 
-        <div style={{ display: "flex", paddingBottom: "20px" }}>
+        <div style={{ display: "flex", paddingBottom: "10px" }}>
           <img className="footer-img-right" src={mail} alt="mail" />
-          <label style={{ paddingTop: "13px", paddingLeft: "10px" }}>
+          <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
             mainline_asia@hotmail.com
           </label>
         </div>
 
-        <div style={{ display: "flex", paddingBottom: "20px" }}>
+        <div style={{ display: "flex", paddingBottom: "10px" }}>
           <img className="footer-img-right" src={map} alt="map" />
-          <label style={{ paddingTop: "13px", paddingLeft: "10px" }}>
+          <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
             www.mainlineasia.co.th
           </label>
         </div>

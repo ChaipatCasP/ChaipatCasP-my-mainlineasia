@@ -1,7 +1,7 @@
 .footer {
   background-color: #00274d;
   color: white;
-  padding-top: 30px;
+  padding-top: 1%;
   text-align: center;
   width: 100%;
 }
@@ -22,14 +22,24 @@
   padding-left: 100px;
 }
 
+.item1-header{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item1-detail{
+  font-size: 14px;
+}
+
 .item2 {
-  width: 30%;
+  width: 40%;
 }
 
 .social{
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .footer-img-left{
@@ -37,7 +47,8 @@
 }
 
 .footer-img-right{
-  width: 50px;
+  width: 25px;
+  height: 25px;
 }
 
 .footer-botton {
@@ -75,10 +86,23 @@
     padding-left: 0;
     display: contents;
   }
+
+  .item1-header{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .item1-detail{
+    font-size: 12px;
+  }
   
   .item2 {
-    width: 50%;
-padding: 20px 50px 5px 50px;    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+    flex-direction:row;
+    padding: 2px 20px 5px 20px;    
+    font-size: 12px;
   }
 
   .social{
@@ -91,16 +115,20 @@ padding: 20px 50px 5px 50px;
   
   .footer-img-left{
     padding-left: 30px;
+    width: 20px;
+    height: 20px;
   }
   
   .footer-img-right{
-    width: 50px;
+    width: 20px;
+    height: 20px;
   }
+
   
     .footer-botton {
     display: flex;
     background: linear-gradient(0deg, #4A66AC, #4A66AC),linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    font-size: 12px;
+    font-size: 10px;
   }
   
   .footer-botton-right{

@@ -15,7 +15,7 @@
 .aboutus-text-header{
   display:flex;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .aboutus-text-header1{
@@ -34,22 +34,56 @@
 
 .ourvision{
   display: flex;
-  text-align: center;
+  text-align: center;  
 }
 
 .ourvision1{
-  width: 40%;
-  padding: 50px 30px 0 30px;
+  width: 35%;
+  padding: 30px 30px 0 30px;
+
 }
 
 .ourvision2 {
-  width: 55%;
+  width: 60%;
   text-align: left;
+  padding: 10px 30px 0 30px;
+}
+
+.ourvision2-item{
+  padding: 20px 10px 0 20px;
 }
 
 .ourvision3 {
-  width: 5px;
+  width: 5%;
 }
+
+
+.ourMission{
+  display: flex;
+  text-align: center;  
+}
+
+.ourMission1{
+  width: 35%;
+  padding: 30px 30px 0 30px;
+
+}
+
+.ourMission2 {
+  width: 60%;
+  text-align: left;
+  padding: 10px 30px 0 30px;
+}
+
+.ourMission2-item{
+  padding: 20px 10px 0 20px;
+}
+
+.ourMission3 {
+  width: 5%;
+}
+
+
 
 .aboutus-items {
   display: flex;
@@ -176,26 +210,65 @@
       
       .ourvision{
         display: flex;
+        flex-direction: column;
         text-align: center;
       }
       
       .ourvision1{
-        width: 9%;
-        padding: 30px 30px 0 30px;
+        width: 100%;
+        padding: 10px 0 0 0;
       }
       .ourvision1 h2{
         font-size: 20px;
       }
       
       .ourvision2 {
-        width: 90%;
-        text-align: left;
+        padding: 0 0 0 0;
+        width: 100%;
+        text-align: center;
         font-size: 12px;
+      }
+
+      .ourvision2-item{
+        padding: 0 0 0 0;
+        text-align: center;
       }
       
       .ourvision3 {
-        width: 1%;
+        width: 100%;
       }
+
+
+      .ourMission{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ourMission1{
+        width: 100%;
+        padding: 10px 0 0 0;
+      }
+      .ourMission1 h2{
+        font-size: 20px;
+      }
+      
+      .ourMission2 {
+        padding: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .ourMission2-item{
+        padding: 5px 30px 5px 30px;
+        text-align: left;
+      }
+      
+      .ourMission3 {
+        width: 100%;
+      }
+
       
       .aboutus-items {
         display: flex;

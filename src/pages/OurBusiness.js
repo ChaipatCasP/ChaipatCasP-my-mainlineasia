@@ -1,6 +1,6 @@
 import React from 'react';
 import "./OurBusiness.css";
-// import { useTranslation } from "react-i18next"; // หากใช้ i18next
+import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
 import rehau from "../assets/images/rehau.png";
@@ -37,7 +37,7 @@ import iCabinet from "../assets/images/iCabinet.png";
 
 
 const OurBusiness = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   // const images = {
   //   en: banner_en,
@@ -48,56 +48,41 @@ const OurBusiness = () => {
     <div className="ourbusiness-container">
       <div className="ourbusiness-header">
         <div>
-          <label className="ourbusiness-header-header">Our Business</label>
+          <label className="ourbusiness-header-header">
+            {t("ourbusiness")}
+          </label>
         </div>
 
         <div className="ourbusiness-header-details">
           <div style={{ paddingBottom: "25px" }}>
-            <label>
-              Our company develops complete solutions for railway power supply
-              systems, energy storage technology, and EV charging stations to
-              support the transportation and energy industries.
-            </label>
+            <label>{t("ourbusiness_detail1")}</label>
           </div>
 
           <div style={{ paddingBottom: "25px" }}>
-            <label>
-              Mainline Asia is a leading provider of power supply systems for
-              railway infrastructure in Thailand. We offer services from design
-              and installation to the management of power systems for different
-              types of rail networks, including high-speed rail, subways, and
-              light rail. We also provide solutions for maintenance depots and
-              substations.
-            </label>
+            <label>{t("ourbusiness_detail2")}</label>
           </div>
 
           <div>
-            <label>Our business is divided into three main areas:</label>
+            <label>{t("ourbusiness_detail3")}</label>
           </div>
 
           <div style={{ paddingBottom: "25px" }}>
-            <label>
-              1.Rail Power Supply (Power systems for railway infrastructure),
-              2.Energy Storage (Solutions for storing and managing energy) and
-              3.EV Charging (Charging station solutions for electric vehicles)
-            </label>
+            <label>{t("ourbusiness_detail4")}</label>
           </div>
         </div>
       </div>
 
       <div style={{ textAlign: "center" }}>
         <label className="ourbusiness-header-header">
-          Product : Railway Electrification
+          {t("product")} : {t("railwayelectrification")}
         </label>
 
         <div className="ourbusiness-footer-three">
           <div className="ourbusiness-footer-item">
             <div className="ourbusiness-footer-item-txt">
-              <label className="header">Overhead Catenary Systems (OCS)</label>
+              <label className="header">{t("overheadcatenarysystems")}</label>
               <label className="detail">
-                High-quality overhead lines and catenary components engineered
-                for efficiency and durability in high-speed, metro, and light
-                rail systems.
+                {t("overheadcatenarysystems_detail")}
               </label>
             </div>
 
@@ -108,11 +93,8 @@ const OurBusiness = () => {
 
           <div className="ourbusiness-footer-item">
             <div className="ourbusiness-footer-item-txt">
-              <label className="header">Third Rail Systems</label>
-              <label className="detail">
-                Advanced third-rail designs and protective covers that deliver
-                safe, continuous power for urban and suburban transit networks.
-              </label>
+              <label className="header">{t("thirdrailsystems")}</label>
+              <label className="detail">{t("thirdrailsystems_detail")}</label>
             </div>
 
             <div className="ourbusiness-footer-item-img img">
@@ -122,15 +104,13 @@ const OurBusiness = () => {
 
           <div className="ourbusiness-footer-item">
             <div className="ourbusiness-footer-item-txt">
-              <label className="header">Traction Substations</label>
+              <label className="header">{t("tractionsubstations")}</label>
               <label className="detail-two">
-                High-efficiency solutions for reliable power conversion and
-                distribution.
+                {t("tractionsubstations_detail1")}
               </label>
 
               <label className="detail-two">
-                Switchgear, breakers, and protective relays specifically
-                engineered for railway power networks.
+                {t("tractionsubstations_detail2")}
               </label>
             </div>
 
@@ -143,10 +123,9 @@ const OurBusiness = () => {
         <div className="ourbusiness-footer-two">
           <div className="ourbusiness-footer-item">
             <div className="ourbusiness-footer-item-txt">
-              <label className="header">Traction Substations</label>
+              <label className="header">{t("tractionsubstations")}</label>
               <label className="detail">
-                Flexible, safe solutions for supplying power to trains during
-                depot maintenance or staging operations.
+                {t("tractionsubstations_detail3")}
               </label>
             </div>
 
@@ -157,12 +136,9 @@ const OurBusiness = () => {
 
           <div className="ourbusiness-footer-item">
             <div className="ourbusiness-footer-item-txt">
-              <label className="header">
-                Auxiliary Components & Accessories
-              </label>
+              <label className="header">{t("auxiliarycomponents")}</label>
               <label className="detail">
-                High-quality conductors and connectors for efficient energy
-                transfer and reduced line losses. Rail Bonding material.
+                {t("auxiliarycomponents_detail")}
               </label>
             </div>
 
@@ -176,17 +152,10 @@ const OurBusiness = () => {
       <div style={{ textAlign: "center", paddingTop: "20px" }}>
         <div className="product-txt-header">
           <label className="ourbusiness-header-header">
-            Product : Rolling Stock Components
+            {t("product")} : {t("rollingrtockromponents")}
           </label>
           <div className="ourbusiness-header-details">
-            <label>
-              Mainline Asia we offers a wide range of electrical component part
-              from our product partner for AC rail vehicles and DC rail vehicles
-              , such as EMU trains, high-speed trains and metro. Our main
-              product consist of Pantograph / 3Rail Current connector, ground
-              Contracts, Roof Mounting Switch, AC or DC Circuit breaker, Surge
-              Arrestor, Voltage Sensor, Energy meter and Master Controller.
-            </label>
+            <label>{t("rollingrtockromponents_detail")}</label>
           </div>
         </div>
 
@@ -306,19 +275,14 @@ const OurBusiness = () => {
       <div style={{ textAlign: "center", paddingTop: "20px" }}>
         <div className="product-txt-header">
           <label className="ourbusiness-header-header">
-            Product : Energy Storage Solutions
+            {t("product")} : {t("energystoragesolutions")}
           </label>
         </div>
 
         <div className="energy_storage">
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-              <label className="detail">
-                Residential Energy Storage Solutions All-in-one system uses
-                flexible battery modular design and integrates inverter, EMS,
-                and UPS management systems to create an efficient, safe and
-                intelligent residential ESS.
-              </label>
+              <label className="detail">{t("energystoragesolutions1")}</label>
             </div>
 
             <div className="energy_storage-item-img">
@@ -328,15 +292,7 @@ const OurBusiness = () => {
 
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-              <label className="detail">
-                Industrial and Commercial (C&I) Energy Storage Solutions 218kWh
-                battery energy storage capacity, built-in PCS/BMS, real-time
-                monitoring and management of power information through the
-                network, small footprint, easy to install and expand, It
-                provides an economical, flexible and efficient solution for
-                applications with high requirements on grid continuity, peak
-                shaving and valley filling and backup power supply, etc.
-              </label>
+              <label className="detail">{t("energystoragesolutions2")}</label>
             </div>
 
             <div className="energy_storage-item-img">
@@ -346,15 +302,7 @@ const OurBusiness = () => {
 
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-              <label className="detail">
-                Utility Energy Storage Solutions Utility ESS can customize
-                container packaging of various sizes based on requests, using
-                safe and efficient lithium-iron batteries, integrating
-                communication, monitoring systems, power conversion systems,
-                fire protection and auxiliary systems. The product has the
-                advantages of high integration, flexible configuration, full
-                functions, convenient installation and debugging.
-              </label>
+              <label className="detail">{t("energystoragesolutions3")}</label>
             </div>
 
             <div className="energy_storage-item-img">
@@ -364,13 +312,7 @@ const OurBusiness = () => {
 
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-              <label className="detail">
-                2MWh large capacity container energy storage charging station,
-                equipped with 6 car charging guns at the same time can output
-                200kW charging power, also provides a variety of industrial
-                power output interface, modular container design, can be quickly
-                transported to different occasions, flexible use.
-              </label>
+              <label className="detail">{t("energystoragesolutions4")}</label>
             </div>
 
             <div className="energy_storage-item-img">
@@ -380,13 +322,7 @@ const OurBusiness = () => {
 
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-              <label className="detail">
-                With 200 kWh of storage and 180 kW charging power, iTrailer is
-                versatile for stationary, towed, or in-vehicle use. It serves as
-                a charger for electric vehicles, an emergency power source, and
-                a backup power supply. Its industrial power outlets offer
-                reliable electricity for various applications.
-              </label>
+              <label className="detail">{t("energystoragesolutions5")}</label>
             </div>
 
             <div className="energy_storage-item-img">
@@ -397,12 +333,7 @@ const OurBusiness = () => {
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
               <label className="detail" style={{ paddingTop: "10px" }}>
-                iMChargerX is a mobile DC fast charger, It offers 60 kW of
-                charging power for one, or 30 kW for two fast charging outlets
-                simultaneously. It is equipped with a user-friendly 21-inch
-                touchscreen and RFID reader. iMChargerX is suitable for charging
-                all types of electric vehicles, cars, trucks, buses, marine and
-                off-highway vehicles.
+                {t("energystoragesolutions6")}
               </label>
             </div>
 
@@ -416,34 +347,29 @@ const OurBusiness = () => {
 
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-              <label className="detail">
-                Integrated energy storage and charging integrated charging
-                robot, built-in 106kWh battery capacity, 80kW charging power,
-                equipped with intelligent robot arm, automatic identification
-                access charging, can complete automatic car search, automatic
-                navigation, automatic access charging, automatic return to
-                recharge and etc.
-              </label>
+              <label className="detail">{t("energystoragesolutions7")}</label>
             </div>
 
-            <div className="energy_storage-item-img" style={{ marginTop: "40px" }}>
+            <div
+              className="energy_storage-item-img"
+              style={{ marginTop: "40px" }}
+            >
               <img src={iACharge} alt="bg" />
             </div>
           </div>
 
           <div className="energy_storage-item">
             <div className="energy_storage-item-txt">
-            <label className="detail" style={{ paddingTop: "10px" }}>
-                Built-in 110kWh energy storage battery capacity, support single
-                gun 180kW double gun 90kW charging output power, equipped with
-                industrial electrical interface output, supports PV input
-                recharge, can quickly land photovoltaic energy storage charging
-                station, greatly reduce the cost of site construction.
+              <label className="detail" style={{ paddingTop: "10px" }}>
+                {t("energystoragesolutions8")}
               </label>
             </div>
 
-            <div className="energy_storage-item-img" style={{ marginTop: "50px" }}>
-              <img src={iCabinet} alt="bg" style={{height:'130px'}}/>
+            <div
+              className="energy_storage-item-img"
+              style={{ marginTop: "50px" }}
+            >
+              <img src={iCabinet} alt="bg" style={{ height: "130px" }} />
             </div>
           </div>
         </div>

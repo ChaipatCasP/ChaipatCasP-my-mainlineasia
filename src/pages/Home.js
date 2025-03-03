@@ -31,7 +31,7 @@ const Home = () => {
 
       <div className="home-aboutus-container">
         {/* <img src={bg2} alt="bg" className="home-aboutus-image" /> */}
-        
+
         <div className="aboutus-text">
           <div style={{ display: "flex" }}>
             <div style={{ width: "40%" }}>
@@ -46,7 +46,6 @@ const Home = () => {
           </div>
 
           <div className="home-aboutus-items">
-
             <div className="home-aboutus-item">
               <div className="border-header">
                 <label className="home-aboutus-item-header">
@@ -94,8 +93,14 @@ const Home = () => {
                 </label>
               </div>
             </div>
-
           </div>
+
+          <div style={{paddingTop:"20px"}}>
+            {/* <h2>{t("service")}</h2> */}
+          </div>
+
+
+
 
         </div>
       </div>

@@ -49,6 +49,29 @@ const AboutUs = () => {
             <div className="ourvision3"></div>
           </div>
 
+
+
+          <div className="ourMission"  >
+            <div className="ourMission1" >
+              <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
+                {t("OurMission")}
+              </h2>
+            </div>
+
+            <div className="ourMission2" >
+              <div className="ourMission2-item" >{t("OurMission_Detail1")}</div>
+              <div className="ourMission2-item" >{t("OurMission_Detail2")}</div>
+              <div className="ourMission2-item" >{t("OurMission_Detail3")}</div>
+            </div>
+
+            <div className="ourMission3"></div>
+          </div>
+
+
+
+
+
+
           <div className="aboutus-items">
             <Link to="/about-railway?id=1" className="link-button">
               <div className="aboutus-item" id="1">
@@ -112,76 +135,62 @@ const AboutUs = () => {
               paddingTop: "30px",
             }}
           >
-            <h1 style={{ color: "rgba(74, 102, 172, 1)" }}>Core Value</h1>
+            <h1 style={{ color: "rgba(74, 102, 172, 1)" }}>{t("corevalue")}</h1>
           </div>
 
           <div className="aboutus-items-no-img">
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label> Innovation </label>
+                <label>  {t("innovation")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>
-                  We foster a culture of continuous improvement, leveraging the
-                  latest research and technological advancements to create
-                  forward-looking solutions.
-                </label>
+              <label>  {t("innovation_detail")} </label>
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label> Integrity </label>
+                <label>  {t("integrity")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>
-                  Ethical business practices and transparent communication form
-                  the foundation of our relationships with customers, partners,
-                  and employees.
-                </label>
+                <label>  {t("integrity_detail")} </label>
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label> Sustainability </label>
+                <label>  {t("sustainability")} </label>
+
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>
-                  Every project is approached with a focus on reducing carbon
-                  emissions, promoting renewable energy usage, and minimizing
-                  environmental impact.
-                </label>
+                <label>  {t("sustainability_detail")} </label>
+
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label> Collaboration </label>
+                <label>  {t("collaboration")} </label>
+
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>
-                  We believe in close partnerships with clients, suppliers, and
-                  industry stakeholders to ensure seamless project execution and
-                  shared success.
-                </label>
+                <label>  {t("collaboration_detail")} </label>
+
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label> Customer-Centricity </label>
+                <label>  {t("customercentricity")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>
-                  Our solutions are designed around the unique needs of each
-                  client, providing tailored services and dedicated support.
-                </label>
+                <label>  {t("customercentricity_detail")} </label>
+
               </div>
             </div>
           </div>
