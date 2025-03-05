@@ -15,7 +15,8 @@
 .page-contact{
     width: 100%;
     transition: background 0.3s ease-in-out;
-    background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+    background: linear-gradient(90deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+    /* background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1)); */
 }
 
 .contact-logo{
