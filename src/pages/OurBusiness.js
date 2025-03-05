@@ -72,7 +72,7 @@ const OurBusiness = () => {
         </div>
       </div>
 
-      <div style={{ textAlign: "center" }}>
+      {/* <div style={{ textAlign: "center" }}>
         <label className="ourbusiness-header-header">
           {t("product")} : {t("railwayelectrification")}
         </label>
@@ -147,9 +147,9 @@ const OurBusiness = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div style={{ textAlign: "center", paddingTop: "20px" }}>
+      {/* <div style={{ textAlign: "center", paddingTop: "20px" }}>
         <div className="product-txt-header">
           <label className="ourbusiness-header-header">
             {t("product")} : {t("rollingrtockromponents")}
@@ -270,9 +270,9 @@ const OurBusiness = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div style={{ textAlign: "center", paddingTop: "20px" }}>
+      {/* <div style={{ textAlign: "center", paddingTop: "20px" }}>
         <div className="product-txt-header">
           <label className="ourbusiness-header-header">
             {t("product")} : {t("energystoragesolutions")}
@@ -373,7 +373,7 @@ const OurBusiness = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

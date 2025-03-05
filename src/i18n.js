@@ -8,6 +8,10 @@ const resources = {
       welcome: "Welcome to our website!",
       description: "Explore our content in English.",
       home: "Home",
+      railway:"Railway",
+      energystorage:"Energy Storage",
+      evcharger:"EV Charger",
+ 
       about: "About Us",
       about_Detail:
         "Mainline Asia found in 2020 is a forward-thinking company" +
@@ -52,7 +56,7 @@ const resources = {
       thirdrailsystems_detail:
         "Advanced third-rail designs and protective covers that deliver safe, continuous power for urban and suburban transit networks.",
       tractionsubstations: "Traction Substations",
-      tractionsubstations_detail:
+      tractionsubstations_detail1:
         "High-efficiency solutions for reliable power conversion and distribution.",
       tractionsubstations_detail2:
         "Switchgear, breakers, and protective relays specifically engineered for railway power networks.",
@@ -64,7 +68,7 @@ const resources = {
       rollingrtockromponents: "Rolling Stock Components",
       rollingrtockromponents_detail:
         "Mainline Asia we offers a wide range of electrical component part from our product partner for AC rail vehicles and DC rail vehicles , such as EMU trains, high-speed trains and metro. Our main product consist of Pantograph / 3Rail Current connector, ground Contracts, Roof Mounting Switch, AC or DC Circuit breaker, Surge Arrestor, Voltage Sensor, Energy meter and Master Controller.",
-      energystoragesolutions: "โซลูชั่นการจัดเก็บพลังงาน",
+      energystoragesolutions: "	Energy Storage Solutions",
 
       energystoragesolutions1:
         "Residential Energy Storage Solutions All-in-one system uses flexible battery modular design and integrates inverter, EMS, and UPS management systems to create an efficient, safe and intelligent residential ESS.",
@@ -85,7 +89,7 @@ const resources = {
       refprojects: "Project References",
       careers: "Careers",
       contact: "Contact Us",
-      hometxtbanner: "Connect to public electric trains.",
+      hometxtbanner: "Seamless Energy Solution for Smart Mobility",
       service: "Service",
       corevalue: "Core Value",
       innovation: "Innovation",
@@ -110,6 +114,10 @@ const resources = {
       welcome: "ยินดีต้อนรับสู่เว็บไซต์ของเรา!",
       description: "สำรวจเนื้อหาของเราในภาษาไทย",
       home: "หน้าแรก",
+      railway:"Railway",
+      energystorage:"Energy Storage",
+      evcharger:"EV Charger",
+      
       about: "เกี่ยวกับเรา",
       about_Detail:
         "Mainline Asia ที่ก่อตั้งในปี 2020 เป็นบริษัทที่มีความคิดก้าวหน้า" +

@@ -1,15 +1,12 @@
 import React from "react";
-// import banner_en from "../assets/images/banner-en.jpg";
-// import banner_th from "../assets/images/banner-th.jpg";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import "./Home.css";
 import Train from "../assets/images/Train.png";
-// import bg2 from "../assets/images/Train.png";
+import electric from "../assets/icon/electric-car.png";
+import train from "../assets/icon/train-1.png";
+import lighting from "../assets/icon/lighting.png";
 
-import vector1 from "../assets/images/Vector-1.png";
-import vector2 from "../assets/images/Vector-2.png";
-import vector3 from "../assets/images/Vector-3.png";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -49,11 +46,11 @@ const Home = () => {
             <div className="home-aboutus-item">
               <div className="border-header">
                 <label className="home-aboutus-item-header">
-                  {t("about_Card1")}
+                  {t("railway")}
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={vector1} alt="card" />
+                <img src={train} alt="card" className="card-img"/>
               </div>
               <div style={{ padding: "10px" }}>
                 <label className="home-aboutus-item-footer">
@@ -65,11 +62,11 @@ const Home = () => {
             <div className="home-aboutus-item">
               <div className="border-header">
                 <label className="home-aboutus-item-header">
-                  {t("about_Card2")}
+                  {t("energystorage")}
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={vector2} alt="card" />
+                <img src={electric} alt="card" className="card-img"/>
               </div>
               <div style={{ padding: "10px" }}>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
@@ -81,11 +78,11 @@ const Home = () => {
             <div className="home-aboutus-item">
               <div className="border-header">
                 <label className="home-aboutus-item-header">
-                  {t("about_Card3")}
+                  {t("evcharger")}
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={vector3} alt="card" />
+                <img src={lighting} alt="card" className="card-img"/>
               </div>
               <div style={{ padding: "10px" }}>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>

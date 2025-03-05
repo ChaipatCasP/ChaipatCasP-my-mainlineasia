@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/src/assets/fonts/centurygothic.ttf") format("truetype");
+}
+
+.my-text {
+  font-family: "Century Gothic", sans-serif;
+}
+
+
 .home{
   background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
   width: 100%;
@@ -83,7 +93,7 @@
 
 .home-aboutus-item .border-header {
   border: solid 1px;
-  height: 80px;
+  height: 50px;
   padding-top: 25px;
   padding: 25px 20px 0 20px;
 }
@@ -99,6 +109,11 @@
     font-weight: 400;
   }
 
+
+  .card-img{
+    width: 150px;
+    height: 150px;
+  }
   /* ####################################################################################################################### */
 
   @media (max-width: 768px) {
@@ -194,5 +209,10 @@
       .home-aboutus-item-footer{
         font-size: 10px;
         font-weight: 400;
+      }
+
+      .card-img{
+        width: 80px;
+        height: 80px;
       }
   }

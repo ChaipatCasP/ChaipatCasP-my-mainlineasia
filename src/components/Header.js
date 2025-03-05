@@ -31,8 +31,8 @@ const Header = () => {
             paddingLeft: "5px",
           }}
         >
-          <label>Mainline </label>
-          <label style={{ color: "red" }}> Asia</label>
+          <label className="my-text" style={{color: "white" }}>Mainline </label>
+          <label className="my-text" style={{ color: "red" }}> Asia</label>
         </div>
 
         </Link> 
@@ -58,15 +58,20 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <Link onClick={toggleMenu} to="/Product">
+            {t("Product")}
+          </Link>
+        </li>
+        {/* <li>
           <Link onClick={toggleMenu} to="/projects">
             {t("refprojects")}
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link onClick={toggleMenu} to="/careers">
             {t("careers")}
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link onClick={toggleMenu} to="/contact">
             {t("contact")}

@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import OurBusiness from "./pages/OurBusiness";
+import Product from "./pages/Product";
 import ProjectReferences from "./pages/ProjectReferences";
 import Careers from "./pages/Careers";
 import ContactUs from "./pages/ContactUs";
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/about-railway" element={<AboutUsRailway />} /> 
           <Route path="/business" element={<OurBusiness />} />
+          <Route path="/Product" element={<Product />} />
           <Route path="/projects" element={<ProjectReferences />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<ContactUs />} />
