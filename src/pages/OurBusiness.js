@@ -2,34 +2,34 @@ import React from 'react';
 import "./OurBusiness.css";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
-import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
-import rehau from "../assets/images/rehau.png";
-import edacec from "../assets/images/edacec.png";
-import stemmann from "../assets/images/stemmann.png";
-import cembre from "../assets/images/cembre.png";
-import Pantograph from "../assets/images/Pantograph.png";
-import MasterController from "../assets/images/MasterController.png";
-import EnergyMeter from "../assets/images/EnergyMeter.png";
+// import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
+// import rehau from "../assets/images/rehau.png";
+// import edacec from "../assets/images/edacec.png";
+// import stemmann from "../assets/images/stemmann.png";
+// import cembre from "../assets/images/cembre.png";
+// import Pantograph from "../assets/images/Pantograph.png";
+// import MasterController from "../assets/images/MasterController.png";
+// import EnergyMeter from "../assets/images/EnergyMeter.png";
 
 
-import RoofMountingSwitch from "../assets/images/RoofMountingSwitch.png";
-import HVDCorACIntegratingsystem  from "../assets/images/HVDCorACIntegratingsystem.png";
-import CurrentVoltageSensor from "../assets/images/CurrentVoltageSensor.png";
-import ACCircuitBreaker  from "../assets/images/ACCircuitBreaker.png";
-import SurgeArrestor from "../assets/images/SurgeArrestor.png";
-import Contactors from "../assets/images/Contactors.png";
-import RailCurrentCollector from "../assets/images/RailCurrentCollector.png";
-import GroundContacts from "../assets/images/GroundContacts.png";
+// import RoofMountingSwitch from "../assets/images/RoofMountingSwitch.png";
+// import HVDCorACIntegratingsystem  from "../assets/images/HVDCorACIntegratingsystem.png";
+// import CurrentVoltageSensor from "../assets/images/CurrentVoltageSensor.png";
+// import ACCircuitBreaker  from "../assets/images/ACCircuitBreaker.png";
+// import SurgeArrestor from "../assets/images/SurgeArrestor.png";
+// import Contactors from "../assets/images/Contactors.png";
+// import RailCurrentCollector from "../assets/images/RailCurrentCollector.png";
+// import GroundContacts from "../assets/images/GroundContacts.png";
 
-import storagesystem from "../assets/images/storagesystem.png";
-import storagesystem2 from "../assets/images/storagesystem2.png";
-import storagesystem3 from "../assets/images/storagesystem3.png";
-import storagesystem4 from "../assets/images/storagesystem4.png";
+// import storagesystem from "../assets/images/storagesystem.png";
+// import storagesystem2 from "../assets/images/storagesystem2.png";
+// import storagesystem3 from "../assets/images/storagesystem3.png";
+// import storagesystem4 from "../assets/images/storagesystem4.png";
 
-import iTrailer from "../assets/images/iTrailer.png";
-import iMChargerX from "../assets/images/iMChargerX.png";
-import iACharge from "../assets/images/iACharge.png";
-import iCabinet from "../assets/images/iCabinet.png";
+// import iTrailer from "../assets/images/iTrailer.png";
+// import iMChargerX from "../assets/images/iMChargerX.png";
+// import iACharge from "../assets/images/iACharge.png";
+// import iCabinet from "../assets/images/iCabinet.png";
 
 
 
