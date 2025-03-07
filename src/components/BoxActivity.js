@@ -19,12 +19,12 @@ import Picture10 from "../assets/aboutusbanner/Picture10.jpg";
 
 
 export default function BoxActivity() {
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (s, time, progress) => {
-      progressCircle.current.style.setProperty('--progress', 1 - progress);
-      progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    };
+    // const progressCircle = useRef(null);
+    // const progressContent = useRef(null);
+    // const onAutoplayTimeLeft = (s, time, progress) => {
+    //   progressCircle.current.style.setProperty('--progress', 1 - progress);
+    //   progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    // };
   return (
     <>
       <div className="BoxActivity">
