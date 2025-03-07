@@ -4,18 +4,21 @@ import React from "react";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import "./AboutUs.css";
-import Train from "../assets/images/bg.jpeg";
 import vector1 from "../assets/images/Vector-1.png";
 import vector2 from "../assets/images/Vector-2.png";
 import vector3 from "../assets/images/Vector-3.png";
 import { Link } from "react-router-dom"; 
+
+import BoxActivity from "../components/BoxActivity"
+
+
 
 const AboutUs = () => {
   const { t } = useTranslation();
 
   // const images = {
   //   en: banner_en,
-  //   th: banner_th,
+  //   th: banner_th,color: rgb(165 190 255);
   // };
 
   return (
@@ -23,54 +26,45 @@ const AboutUs = () => {
       <div className="aboutus-container">
         <div className="aboutus-text">
           <div className="aboutus-text-header">
-            <div className="aboutus-text-header1" >
+            <div className="aboutus-text-header1">
               <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>{t("about")}</h2>
               <div style={{ padding: "20px" }}>{t("about_Detail")}</div>
             </div>
 
-            <div className="aboutus-text-header2"  >
-              <img src={Train} alt="bg" />
+            <div className="aboutus-text-header2">
+              {/* <img src={Train} alt="bg" /> */}
+
+              <BoxActivity />
             </div>
 
-            <div className="aboutus-text-header3" ></div>
+            <div className="aboutus-text-header3"></div>
           </div>
 
-          <div className="ourvision"  >
-            <div className="ourvision1" >
-              <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
-                {t("ourvision")}
-              </h2>
+          <div className="ourvision">
+            <div className="ourvision1">
+              <h2 style={{ color: "rgb(56 76 127)" }}>{t("ourvision")}</h2>
             </div>
 
-            <div className="ourvision2" >
+            <div className="ourvision2">
               <div style={{ padding: "20px" }}>{t("ourvision_Detail")}</div>
             </div>
 
             <div className="ourvision3"></div>
           </div>
 
-
-
-          <div className="ourMission"  >
-            <div className="ourMission1" >
-              <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
-                {t("OurMission")}
-              </h2>
+          <div className="ourMission">
+            <div className="ourMission1">
+              <h2 style={{ color: "rgb(56 76 127)" }}>{t("OurMission")}</h2>
             </div>
 
-            <div className="ourMission2" >
-              <div className="ourMission2-item" >{t("OurMission_Detail1")}</div>
-              <div className="ourMission2-item" >{t("OurMission_Detail2")}</div>
-              <div className="ourMission2-item" >{t("OurMission_Detail3")}</div>
+            <div className="ourMission2">
+              <div className="ourMission2-item">{t("OurMission_Detail1")}</div>
+              <div className="ourMission2-item">{t("OurMission_Detail2")}</div>
+              <div className="ourMission2-item">{t("OurMission_Detail3")}</div>
             </div>
 
             <div className="ourMission3"></div>
           </div>
-
-
-
-
-
 
           <div className="aboutus-items">
             <Link to="/about-railway?id=1" className="link-button">
@@ -135,62 +129,57 @@ const AboutUs = () => {
               paddingTop: "30px",
             }}
           >
-            <h1 style={{ color: "rgba(74, 102, 172, 1)" }}>{t("corevalue")}</h1>
+            <h1 style={{ color: "rgb(165 190 255)" }}>{t("corevalue")}</h1>
           </div>
 
           <div className="aboutus-items-no-img">
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label>  {t("innovation")} </label>
+                <label> {t("innovation")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-              <label>  {t("innovation_detail")} </label>
+                <label> {t("innovation_detail")} </label>
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label>  {t("integrity")} </label>
+                <label> {t("integrity")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>  {t("integrity_detail")} </label>
+                <label> {t("integrity_detail")} </label>
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label>  {t("sustainability")} </label>
-
+                <label> {t("sustainability")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>  {t("sustainability_detail")} </label>
-
+                <label> {t("sustainability_detail")} </label>
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label>  {t("collaboration")} </label>
-
+                <label> {t("collaboration")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>  {t("collaboration_detail")} </label>
-
+                <label> {t("collaboration_detail")} </label>
               </div>
             </div>
 
             <div className="aboutus-item-no-img">
               <div className="aboutus-item-no-img-header">
-                <label>  {t("customercentricity")} </label>
+                <label> {t("customercentricity")} </label>
               </div>
 
               <div className="aboutus-item-no-img-footer">
-                <label>  {t("customercentricity_detail")} </label>
-
+                <label> {t("customercentricity_detail")} </label>
               </div>
             </div>
           </div>

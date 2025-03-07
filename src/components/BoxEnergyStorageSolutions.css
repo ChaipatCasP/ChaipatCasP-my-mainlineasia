@@ -1,0 +1,88 @@
+.BoxEnergyStorageSolutions-box .swiper {
+  width: 650px;
+  height: 300px;
+}
+
+.BoxEnergyStorageSolutions-box .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.BoxEnergyStorageSolutions-box .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.BoxEnergyStorageSolutions-product-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.BoxEnergyStorageSolutions-product-item {
+  display: flex;
+  flex-direction: row;
+  height: 100%; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.BoxEnergyStorageSolutions-product-item .header {
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+} 
+
+.BoxEnergyStorageSolutions-product-item .detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 10px 0 10px;
+} 
+
+.BoxEnergyStorageSolutions-product-item .img {
+  text-align: center;
+  width: 100px;
+  height: 210px;
+} 
+
+.BoxEnergyStorageSolutions-product-item-footer{
+  height: 40px;
+} 
+
+
+@media (max-width: 768px) {
+
+  .BoxEnergyStorageSolutions-box .swiper {
+    padding-top: 35px;
+    width: 100%;
+    height: 100%;
+
+  }
+  .BoxEnergyStorageSolutions-product-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BoxEnergyStorageSolutions-product-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+
+  .BoxEnergyStorageSolutions-product-item .img {
+    text-align: center;
+    width: 100%;
+    height: 350px;
+  } 
+
+
+}

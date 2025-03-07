@@ -3,6 +3,8 @@
   width: 100%;
   overflow: hidden;
   display: flex;
+  background: linear-gradient(0deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+
   /* background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1)); */
   /* background: linear-gradient(135deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1)); */
 }

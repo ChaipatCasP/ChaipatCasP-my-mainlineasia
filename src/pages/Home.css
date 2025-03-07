@@ -115,6 +115,14 @@
     width: 150px;
     height: 150px;
   }
+
+  .textdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap:nowrap;
+    /* padding-top: 30px; */
+  }
   /* ####################################################################################################################### */
 
   @media (max-width: 768px) {
@@ -216,4 +224,15 @@
         width: 80px;
         height: 80px;
       }
+
+      .textdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        flex-wrap:nowrap;
+        /* padding-top: 30px; */
+      }
   }
+
+  
+ 

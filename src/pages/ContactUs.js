@@ -31,16 +31,17 @@ const ContactUs = () => (
     </div>
 
     <div className="contact-1">
+      <div>
       <div className="contact-logo">
         <div>
           <img src={youlogo} alt="bg" style={{ width: "150px" }} />
         </div>
 
         <div
+        className="contact-logo-text"
           style={{
             display: "flex",
             flexDirection: "column",
-            fontSize: "26px",
             paddingLeft: "10px",
             textUnderlinePosition: "unset",
           }}
@@ -85,7 +86,7 @@ const ContactUs = () => (
         </div>
       </div>
 
-      <h4 style={{ paddingTop: "40px" }}>Follow Us</h4>
+      <h4 className='FollowUs'>Follow Us</h4>
 
       <div className="social-item">
         <img
@@ -107,6 +108,8 @@ const ContactUs = () => (
           href="https://twitter.com"
         />
       </div>
+      </div>
+   
     </div>
   </div>
 );

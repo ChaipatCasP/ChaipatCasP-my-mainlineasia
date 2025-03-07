@@ -7,11 +7,10 @@ import rehau from "../assets/images/rehau.png";
 import edacec from "../assets/images/edacec.png";
 import stemmann from "../assets/images/stemmann.png";
 import cembre from "../assets/images/cembre.png";
+
 import Pantograph from "../assets/images/Pantograph.png";
 import MasterController from "../assets/images/MasterController.png";
 import EnergyMeter from "../assets/images/EnergyMeter.png";
-
-
 import RoofMountingSwitch from "../assets/images/RoofMountingSwitch.png";
 import HVDCorACIntegratingsystem  from "../assets/images/HVDCorACIntegratingsystem.png";
 import CurrentVoltageSensor from "../assets/images/CurrentVoltageSensor.png";
@@ -25,7 +24,6 @@ import storagesystem from "../assets/images/storagesystem.png";
 import storagesystem2 from "../assets/images/storagesystem2.png";
 import storagesystem3 from "../assets/images/storagesystem3.png";
 import storagesystem4 from "../assets/images/storagesystem4.png";
-
 import iTrailer from "../assets/images/iTrailer.png";
 import iMChargerX from "../assets/images/iMChargerX.png";
 import iACharge from "../assets/images/iACharge.png";
@@ -38,10 +36,6 @@ import iCabinet from "../assets/images/iCabinet.png";
     return (
       <div className="product">
         <div className="product-container" style={{ textAlign: "center" }}>
-          {/* <div className="product-items">
-            <h1 className="product-top-header">Product</h1>
-          </div> */}
-
           <div className="product-items" style={{ paddingTop: "80px" }}>
             <label className="product-header">
               {t("railwayelectrification")}
@@ -249,8 +243,12 @@ import iCabinet from "../assets/images/iCabinet.png";
                   </label>
                 </div>
 
-                <div className="product-footer-item-img" style={{paddingTop:"20px"}}>
-                  <img src={storagesystem} alt="bg" style={{width:"200px"}}/>
+                <div className="product-footer-item-img">
+                  <img
+                    src={storagesystem}
+                    alt="bg"
+                    style={{ width: "200px" }}
+                  />
                 </div>
               </div>
 
@@ -261,8 +259,12 @@ import iCabinet from "../assets/images/iCabinet.png";
                   </label>
                 </div>
 
-                <div className="product-footer-item-img" >
-                  <img src={storagesystem2} alt="bg" style={{width:"200px"}}/>
+                <div className="product-footer-item-img">
+                  <img
+                    src={storagesystem2}
+                    alt="bg"
+                    style={{ width: "200px" }}
+                  />
                 </div>
               </div>
 
@@ -274,11 +276,15 @@ import iCabinet from "../assets/images/iCabinet.png";
                 </div>
 
                 <div className="product-footer-item-img">
-                  <img src={storagesystem3} alt="bg" style={{width:"200px"}}/>
+                  <img
+                    src={storagesystem3}
+                    alt="bg"
+                    style={{ width: "200px" }}
+                  />
                 </div>
               </div>
 
-              <div className="product-item" >
+              <div className="product-item">
                 <div className="product-footer-item-txt">
                   <label className="detail">
                     {t("energystoragesolutions4")}
@@ -290,7 +296,7 @@ import iCabinet from "../assets/images/iCabinet.png";
                 </div>
               </div>
 
-              <div className="product-item" style={{marginTop:"170px"}}>
+              <div className="product-item">
                 <div className="product-footer-item-txt">
                   <label className="detail">
                     {t("energystoragesolutions5")}
@@ -298,7 +304,7 @@ import iCabinet from "../assets/images/iCabinet.png";
                 </div>
 
                 <div className="product-footer-item-img">
-                  <img src={iTrailer} alt="bg" style={{width:"200px"}} />
+                  <img src={iTrailer} alt="bg" style={{ width: "200px" }} />
                 </div>
               </div>
 
@@ -314,7 +320,7 @@ import iCabinet from "../assets/images/iCabinet.png";
                 </div>
               </div>
 
-              <div className="product-item" style={{marginTop:"60px",paddingBottom:"100px"}}>
+              <div className="product-item">
                 <div className="product-footer-item-txt">
                   <label className="detail">
                     {t("energystoragesolutions7")}
@@ -326,7 +332,7 @@ import iCabinet from "../assets/images/iCabinet.png";
                 </div>
               </div>
 
-              <div className="product-item" style={{marginTop:"60px",paddingBottom:"100px"}}> 
+              <div className="product-item">
                 <div className="product-footer-item-txt">
                   <label className="detail">
                     {t("energystoragesolutions8")}
@@ -334,128 +340,14 @@ import iCabinet from "../assets/images/iCabinet.png";
                 </div>
 
                 <div className="product-footer-item-img">
-                  <img src={iCabinet} alt="bg"  style={{ width: "150px" }}/>
+                  <img src={iCabinet} alt="bg" style={{ width: "150px" }} />
                 </div>
               </div>
 
-
-
-
-
-
-
-
-
-        
-
-
-              
-
-              {/* <div className="energy_storage-item">
-            <div className="energy_storage-item-txt">
-              <label className="detail">{t("energystoragesolutions1")}</label>
-            </div>
-
-            <div className="energy_storage-item-img">
-              <img src={storagesystem} alt="bg" />
-            </div>
-          </div> */}
-
-              {/* <div className="energy_storage-item">
-            <div className="energy_storage-item-txt">
-              <label className="detail">{t("energystoragesolutions2")}</label>
-            </div>
-
-            <div className="energy_storage-item-img">
-              <img src={storagesystem2} alt="bg" />
+             
             </div>
           </div>
-
-          <div className="energy_storage-item">
-            <div className="energy_storage-item-txt">
-              <label className="detail">{t("energystoragesolutions3")}</label>
-            </div>
-
-            <div className="energy_storage-item-img">
-              <img src={storagesystem3} alt="bg" />
-            </div>
-          </div> */}
-
-              {/* <div className="energy_storage-item">
-                <div className="energy_storage-item-txt">
-                  <label className="detail">
-                    {t("energystoragesolutions4")}
-                  </label>
-                </div>
-
-                <div className="energy_storage-item-img">
-                  <img src={storagesystem4} alt="bg" />
-                </div>
-              </div> */}
-
-              {/* <div className="energy_storage-item">
-                <div className="energy_storage-item-txt">
-                  <label className="detail">
-                    {t("energystoragesolutions5")}
-                  </label>
-                </div>
-
-                <div className="energy_storage-item-img">
-                  <img src={iTrailer} alt="bg" />
-                </div>
-              </div> */}
-
-              {/* <div className="energy_storage-item">
-                <div className="energy_storage-item-txt">
-                  <label className="detail" style={{ paddingTop: "10px" }}>
-                    {t("energystoragesolutions6")}
-                  </label>
-                </div>
-
-                <div
-                  className="energy_storage-item-img"
-                  style={{ marginTop: "60px" }}
-                >
-                  <img src={iMChargerX} alt="bg" style={{ height: "130px" }} />
-                </div>
-              </div> */}
-
-              {/* <div className="energy_storage-item">
-                <div className="energy_storage-item-txt">
-                  <label className="detail">
-                    {t("energystoragesolutions7")}
-                  </label>
-                </div>
-
-                <div
-                  className="energy_storage-item-img"
-                  style={{ marginTop: "40px" }}
-                >
-                  <img src={iACharge} alt="bg" />
-                </div>
-              </div> */}
-
-              {/* <div className="energy_storage-item">
-                <div className="energy_storage-item-txt">
-                  <label className="detail" style={{ paddingTop: "10px" }}>
-                    {t("energystoragesolutions8")}
-                  </label>
-                </div>
-
-                <div
-                  className="energy_storage-item-img"
-                  style={{ marginTop: "50px" }}
-                >
-                  <img src={iCabinet} alt="bg" style={{ height: "130px" }} />
-                </div>
-              </div> */}
-            </div>
-          </div>
-
-      
         </div>
-
-        
       </div>
     );
   };

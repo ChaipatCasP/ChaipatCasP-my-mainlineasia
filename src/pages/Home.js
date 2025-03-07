@@ -6,15 +6,14 @@ import Train from "../assets/images/Train.png";
 import electric from "../assets/icon/electric-car.png";
 import train from "../assets/icon/train-1.png";
 import lighting from "../assets/icon/lighting.png";
+import BoxRailwayElectrification from "../components/BoxRailwayElectrification"
+import BoxRollingStockComponents from "../components/BoxRollingStockComponents"
+import BoxEnergyStorageSolutions from "../components/BoxEnergyStorageSolutions"
+
 
 
 const Home = () => {
   const { t } = useTranslation();
-
-  // const images = {
-  //   en: banner_en,
-  //   th: banner_th,
-  // };
 
   return (
     <div className="home">
@@ -50,7 +49,7 @@ const Home = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={train} alt="card" className="card-img"/>
+                <img src={train} alt="card" className="card-img" />
               </div>
               <div style={{ padding: "10px" }}>
                 <label className="home-aboutus-item-footer">
@@ -66,7 +65,7 @@ const Home = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={electric} alt="card" className="card-img"/>
+                <img src={electric} alt="card" className="card-img" />
               </div>
               <div style={{ padding: "10px" }}>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
@@ -82,7 +81,7 @@ const Home = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={lighting} alt="card" className="card-img"/>
+                <img src={lighting} alt="card" className="card-img" />
               </div>
               <div style={{ padding: "10px" }}>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
@@ -92,15 +91,30 @@ const Home = () => {
             </div>
           </div>
 
-          <div style={{paddingTop:"20px"}}>
+          <div style={{ paddingTop: "20px" }}>
             {/* <h2>{t("service")}</h2> */}
           </div>
-
-
-
-
         </div>
       </div>
+
+      <div style={{ backgroundColor: "white", paddingTop: "10px" }}>
+        <div className="textdiv">
+          <div>
+            <BoxRailwayElectrification />
+          </div>
+
+          <div>
+            <BoxEnergyStorageSolutions />
+          </div>
+        </div>
+      </div>
+
+      <div style={{ backgroundColor: "white", paddingTop: "80px" }}>
+        <BoxRollingStockComponents/>
+      </div>
+
+
+
     </div>
   );
 };

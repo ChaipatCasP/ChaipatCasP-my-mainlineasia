@@ -50,14 +50,14 @@ const Footer = () => (
     </div>
 
     <div className="footer-botton">
-      <div style={{ width: "50%" }}>
+      <div style={{ width: "50%" ,textAlign:"left"}}>
         <label>copyright © 2025 Mainline Asia Co., Ltd </label>
       </div>
-      <div className="footer-botton-right" style={{ width: "50%" }}>
+      {/* <div className="footer-botton-right" style={{ width: "50%" }}>
         <div style={{ cursor: "pointer" }}>Cookies Setting</div>
         <div style={{ cursor: "pointer" }}>Terms of Use</div>
         <div style={{ cursor: "pointer" }}>Privacy Notice</div>
-      </div>
+      </div> */}
     </div>
   </footer>
 );
