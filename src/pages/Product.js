@@ -42,8 +42,8 @@ import iCabinet from "../assets/images/iCabinet.png";
             </label>
           </div>
 
-          <div className="product-items">
-            <div className="product-item">
+          <div className="container-1">
+            <div className="container-1-product-item">
               <div className="product-footer-item-txt">
                 <label className="header">{t("overheadcatenarysystems")}</label>
                 <label className="detail">
@@ -56,7 +56,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
             </div>
 
-            <div className="product-item">
+            <div className="container-1-product-item">
               <div className="product-footer-item-txt">
                 <label className="header">{t("thirdrailsystems")}</label>
                 <label className="detail">{t("thirdrailsystems_detail")}</label>
@@ -67,7 +67,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
             </div>
 
-            <div className="product-item">
+            <div className="container-1-product-item">
               <div className="product-footer-item-txt">
                 <label className="header">{t("tractionsubstations")}</label>
                 <label className="detail">
@@ -81,7 +81,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
             </div>
 
-            <div className="product-item">
+            <div className="container-1-product-item">
               <div className="product-footer-item-txt">
                 <label className="header">{t("tractionsubstations")}</label>
                 <label className="detail">
@@ -94,7 +94,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
             </div>
 
-            <div className="product-item">
+            <div className="container-1-product-item">
               <div className="product-footer-item-txt">
                 <label className="header">{t("auxiliarycomponents")}</label>
                 <label className="detail">
@@ -114,118 +114,107 @@ import iCabinet from "../assets/images/iCabinet.png";
             </label>
           </div>
 
-          <div className="product-items">
-            <div className="ourbusiness-product">
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Pantograph</label>
-                </div>
+          <div className="container-2">
 
-                <div className="ourbusiness-product-item-img">
-                  <img src={Pantograph} alt="bg" />
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">{t("Pantograph")}</label>
                 </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Master Controller</label>
+                <div className="product-footer-item-img">
+                  <img src={Pantograph} alt="bg" className="img" />
                 </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={MasterController} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Energy Meter</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={EnergyMeter} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Roof Mounting Switch</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={RoofMountingSwitch} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>HV DC or AC Integrating system </label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={HVDCorACIntegratingsystem} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Current / Voltage Sensor</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={CurrentVoltageSensor} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>AC Circuit Breaker</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={ACCircuitBreaker} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Surge Arrestor</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={SurgeArrestor} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Contactors</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={Contactors} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>3Rail Current Collector</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={RailCurrentCollector} alt="bg" />
-                </div>
-              </div>
-
-              <div className="ourbusiness-product-item">
-                <div className="ourbusiness-product-item-txt">
-                  <label>Ground Contacts</label>
-                </div>
-
-                <div className="ourbusiness-product-item-img">
-                  <img src={GroundContacts} alt="bg" />
-                </div>
-              </div>
             </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Master Controller</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={MasterController} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Energy Meter</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={EnergyMeter} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Roof Mounting Switch</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={RoofMountingSwitch} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">HV DC or AC Integrating system</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={HVDCorACIntegratingsystem} alt="bg" className="img" />
+                </div>
+            </div>
+            
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Current / Voltage Sensor</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={CurrentVoltageSensor} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">AC Circuit Breaker</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={ACCircuitBreaker} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Surge Arrestor</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={SurgeArrestor} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Contactors</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={Contactors} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">3Rail Current Collector</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={RailCurrentCollector} alt="bg" className="img" />
+                </div>
+            </div>
+
+            <div className="container-2-product-item">
+              <div className="product-footer-item-txt">
+                  <label className="header">Ground Contacts</label>
+                </div>
+                <div className="product-footer-item-img">
+                  <img src={GroundContacts} alt="bg" className="img" />
+                </div>
+            </div>
+
           </div>
 
           <div className="product-items" style={{ paddingTop: "20px" }}>
@@ -343,8 +332,6 @@ import iCabinet from "../assets/images/iCabinet.png";
                   <img src={iCabinet} alt="bg" style={{ width: "150px" }} />
                 </div>
               </div>
-
-             
             </div>
           </div>
         </div>

@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
 
     .page-contact{
-        padding-top: 50px;
+        padding-top: 70px;
         display: flex;
         flex-direction: column;
     }

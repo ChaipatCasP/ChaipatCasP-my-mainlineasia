@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import "./Home.css";
-import Train from "../assets/images/Train.png";
+// import Train from "../assets/images/Train.png";
 import electric from "../assets/icon/electric-car.png";
 import train from "../assets/icon/train-1.png";
 import lighting from "../assets/icon/lighting.png";
@@ -10,6 +10,7 @@ import BoxRailwayElectrification from "../components/BoxRailwayElectrification"
 import BoxRollingStockComponents from "../components/BoxRollingStockComponents"
 import BoxEnergyStorageSolutions from "../components/BoxEnergyStorageSolutions"
 
+import BoxActivity from "../components/BoxActivity"
 
 
 const Home = () => {
@@ -18,9 +19,10 @@ const Home = () => {
   return (
     <div className="home">
       <div className="hero">
-        <img src={Train} alt="bg" className="hero-image" />
+        {/* <img src={Train} alt="bg" className="hero-image" /> */}
+        <BoxActivity />
 
-        <div className="hero-text">
+        <div className="hero-text" style={{ zIndex: "99999" }}>
           <label>{t("hometxtbanner")}</label>
         </div>
       </div>
@@ -110,11 +112,8 @@ const Home = () => {
       </div>
 
       <div style={{ backgroundColor: "white", paddingTop: "80px" }}>
-        <BoxRollingStockComponents/>
+        <BoxRollingStockComponents />
       </div>
-
-
-
     </div>
   );
 };

@@ -16,11 +16,11 @@
 
 .hero {
     position: relative;
-    /* height: 80vh; */
-    /* background: url('../assets/images/engineer.png') no-repeat center center/cover; */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 10px;
   }
   
   .hero-text {
@@ -32,7 +32,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
-    width: 100%;
+    /* width: 100%; */
+    width: 80%;
   }
   
   .hero-text h1 {
@@ -84,19 +85,22 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    border-radius: 10px;
   }
   
   .home-aboutus-item {
     border: solid 1px;
     width: 300px;
-    height: 400px;
+    height: 370px;
+    border-radius: 10px;
+
   }
 
 .home-aboutus-item .border-header {
-  border: solid 1px;
-  height: 50px;
-  padding-top: 25px;
-  padding: 25px 20px 0 20px;
+  /* border: solid 1px; */
+  border-bottom: solid 1px;
+  height: 40px;
+  padding: 15px 20px 0 20px;
 }
 
 
