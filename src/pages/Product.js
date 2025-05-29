@@ -110,7 +110,7 @@ import iCabinet from "../assets/images/iCabinet.png";
 
           <div className="product-items" style={{ paddingTop: "20px" }}>
             <label className="product-header">
-              {t("rollingrtockromponents")}
+              {t("rollingstockcomponents")}
             </label>
           </div>
 

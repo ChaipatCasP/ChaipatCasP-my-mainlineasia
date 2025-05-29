@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-// import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom"; // ใช้ดึงค่า ID จาก URL
+import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
 import "./AboutUsRailway.css";
 import Train from "../assets/images/bg.jpeg";
 
 const AboutUsRailway = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const AboutUsRailway = () => {
         <div className="aboutus-railway">
           <div className="aboutus-railway1">
             <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
-              High-Performance Railway Power Supply
+              {t("highperformance_railway_power_supply_header")}
             </h2>
             <div className="aboutus-railway1-details">
               <div
@@ -42,25 +42,20 @@ const AboutUsRailway = () => {
                 }}
               >
                 <label style={{ paddingBottom: "10px" }}>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We
-                  develop turnkey railway solution with a completed system of
-                  traction power supply , power rail , overhead catenary and
-                  stinger system including maintenance work.
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  {t("highperformance_railway_power_supply_detail1")}
                 </label>
 
                 <label style={{ paddingBottom: "10px" }}>
-                  Overhead Catenary Systems (OCS): Reliable power distribution
-                  for high-speed, metro, and light rail systems.
+                  {t("highperformance_railway_power_supply_detail2")}
                 </label>
 
                 <label style={{ paddingBottom: "10px" }}>
-                  Third Rail Systems: Efficient power supply for urban metro
-                  networks.
+                  {t("highperformance_railway_power_supply_detail3")}
                 </label>
 
                 <label style={{ paddingBottom: "10px" }}>
-                  Stinger Systems: Powering trains during maintenance in depots
-                  and workshops.
+                  {t("highperformance_railway_power_supply_detail4")}
                 </label>
               </div>
 
@@ -72,16 +67,12 @@ const AboutUsRailway = () => {
                   paddingTop: "10px",
                 }}
               >
-                <label>Traction Substations:</label>
+                <label>{t("tractionsubstations")}</label>
                 <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Design & Engineering: Customized solutions that convert
-                  incoming high-voltage AC power to the specific AC or DC
-                  voltage needed for railway traction.
+                  {t("tractionsubstations_detail_about1")}
                 </label>
                 <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Key Components: Includes transformers, rectifiers,
-                  switchgear, and protective devices to ensure safe and stable
-                  power distribution.
+                  {t("tractionsubstations_detail_about2")}
                 </label>
               </div>
             </div>
@@ -99,7 +90,7 @@ const AboutUsRailway = () => {
         <div className="aboutus-railway">
           <div className="aboutus-railway1">
             <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
-              Advanced Energy Storage
+              {t("AdvancedEnergyStorage")}
             </h2>
             <div className="aboutus-railway1-details">
               <div
@@ -111,20 +102,18 @@ const AboutUsRailway = () => {
                 }}
               >
                 <label style={{ paddingBottom: "10px" }}>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides
-                  customized energy storage solutions with a complete battery
-                  value chain and solid capabilities across manufacturing,
-                  distribution with our partner for all solution
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  {t("AdvancedEnergyStorage_detail1")}
                 </label>
-                <label>Traction Substations:</label>
+                <label>{t("tractionsubstations")}</label>
                 <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Residential Energy Storage Solutions.
+                  {t("AdvancedEnergyStorage_detail2")}
                 </label>
                 <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Utility Energy Storage Solutions.
+                  {t("AdvancedEnergyStorage_detail3")}
                 </label>
                 <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-                  • Industrial and Commercial (C&I) Energy Storage Solutions.
+                  {t("AdvancedEnergyStorage_detail4")}
                 </label>
               </div>
             </div>
@@ -138,52 +127,48 @@ const AboutUsRailway = () => {
         </div>
       </div>
       <div id="3" style={{ display: "none" }}>
-  <div className="aboutus-railway">
-    <div className="aboutus-railway1">
-      <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
-        Robust EV Charging Networks
-      </h2>
-      <div className="aboutus-railway1-details">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "left",
-            paddingTop: "10px",
-          }}
-        >
-          <label style={{ paddingBottom: "10px" }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides
-            customized EV Charger solutions with a complete solution.
-          </label>
-          <label>Traction Substations:</label>
-          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-            • Fast-Charging Stations: Compatibility with all major EV
-            models.
-          </label>
-          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-            • Smart Charging Solutions: IoT-enabled monitoring, billing,
-            and load management.
-          </label>
-          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-            • Green Energy Integration: Options for on-site solar or wind
-            power to reduce carbon footprint.
-          </label>
-          <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
-            • Tailored Implementations: Urban, highway, and fleet charging
-            solutions for diverse customer requirements.
-          </label>
+        <div className="aboutus-railway">
+          <div className="aboutus-railway1">
+            <h2 style={{ color: "rgba(74, 102, 172, 1)" }}>
+              {t("RobustEVChargingNetworks")}
+            </h2>
+            <div className="aboutus-railway1-details">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  textAlign: "left",
+                  paddingTop: "10px",
+                }}
+              >
+                <label style={{ paddingBottom: "10px" }}>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  {t("RobustEVChargingNetworks_detail1")}
+                </label>
+                <label>{t("tractionsubstations")}</label>
+                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+                  {t("RobustEVChargingNetworks_detail2")}
+                </label>
+                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+                  {t("RobustEVChargingNetworks_detail3")}
+                </label>
+                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+                  {t("RobustEVChargingNetworks_detail4")}
+                </label>
+                <label style={{ paddingLeft: "20px", paddingTop: "15px" }}>
+                  {t("RobustEVChargingNetworks_detail5")}
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div className="aboutus-railway2">
+            <img src={Train} alt="bg" />
+          </div>
+
+          <div className="aboutus-railway3"></div>
         </div>
       </div>
-    </div>
-
-    <div className="aboutus-railway2">
-      <img src={Train} alt="bg" />
-    </div>
-
-    <div className="aboutus-railway3"></div>
-  </div>
-</div>
 
       <div>&nbsp;</div>
     </div>

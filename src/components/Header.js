@@ -58,8 +58,8 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link onClick={toggleMenu} to="/Product">
-            {t("Product")}
+          <Link onClick={toggleMenu} to="/product">
+            {t("product")}
           </Link>
         </li>
         {/* <li>

@@ -1,33 +1,49 @@
-import React from "react";
+import React, { Suspense, lazy, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import OurBusiness from "./pages/OurBusiness";
-import Product from "./pages/Product";
-import ProjectReferences from "./pages/ProjectReferences";
-import Careers from "./pages/Careers";
-import ContactUs from "./pages/ContactUs";
 
-import AboutUsRailway from "./pages/AboutUsRailway";
+const Home = lazy(() => import("./pages/Home"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const OurBusiness = lazy(() => import("./pages/OurBusiness"));
+const Product = lazy(() => import("./pages/Product"));
+const ProjectReferences = lazy(() => import("./pages/ProjectReferences"));
+const Careers = lazy(() => import("./pages/Careers"));
+const ContactUs = lazy(() => import("./pages/ContactUs"));
+const AboutUsRailway = lazy(() => import("./pages/AboutUsRailway"));
+
 
 const App = () => {
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    // ตรวจสอบภาษาใน localStorage หรือ cookie
+    const lang = localStorage.getItem("i18nextLng") || "en";
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [i18n]);
+
+
   return (
     <Router>
       <div className="app">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/about-railway" element={<AboutUsRailway />} /> 
-          <Route path="/business" element={<OurBusiness />} />
-          <Route path="/Product" element={<Product />} />
-          <Route path="/projects" element={<ProjectReferences />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<ContactUs />} />
-        </Routes>
+        <Header key={i18n.language} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/about-railway" element={<AboutUsRailway />} />
+            <Route path="/business" element={<OurBusiness />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/projects" element={<ProjectReferences />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </div>
     </Router>
@@ -35,38 +51,3 @@ const App = () => {
 };
 
 export default App;
-
-
-// // import React, { useState } from 'react';
-// import './styles.css';
-// import Header from './components/Header';
-// import Home from './pages/Home';
-// import AboutUs from './pages/AboutUs';
-// import OurBusiness from './pages/OurBusiness';
-// import ProjectReferences from './pages/ProjectReferences';
-// import Careers from './pages/Careers';
-// import ContactUs from './pages/ContactUs';
-// import Footer from './components/Footer';
-
-// const App = () => {
-//   // const [isMenuOpen, setMenuOpen] = useState(false);
-
-//   // const toggleMenu = () => {
-//   //   setMenuOpen(!isMenuOpen);
-//   // };
-
-//   return (
-//     <div className="app">
-//       <Header />
-//       <div id="home"><Home /></div>
-//       <div id="about"><AboutUs /></div>
-//       <div id="business"><OurBusiness /></div>
-//       <div id="projects"><ProjectReferences /></div>
-//       <div id="careers"><Careers /></div>
-//       <div id="contact"><ContactUs /></div>
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default App;

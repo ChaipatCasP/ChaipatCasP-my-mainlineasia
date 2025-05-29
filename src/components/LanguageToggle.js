@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dropdown, Menu, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import img_en from "../assets/us.png";
 import img_th from "../assets/th.png";
+import { useTranslation } from "react-i18next";
 
-const LanguageToggle = ({ changeLanguage,toggleMenu }) => {
-  const [selectedLang, setSelectedLang] = useState("en");
+const LanguageToggle = ({ changeLanguage, toggleMenu }) => {
+  const { i18n } = useTranslation();
+  const [selectedLang, setSelectedLang] = useState(i18n.language || "en");
+
+  useEffect(() => {
+    setSelectedLang(i18n.language || "en");
+  }, [i18n.language]);
 
   const languages = [
     { key: "en", label: "English", img: img_en },
@@ -28,7 +34,6 @@ const LanguageToggle = ({ changeLanguage,toggleMenu }) => {
       ))}
     </Menu>
   );
-
 
   return (
     <Dropdown overlay={menu} trigger={["click"]}>
