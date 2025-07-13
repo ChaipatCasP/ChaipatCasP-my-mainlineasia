@@ -8,11 +8,12 @@ import "./BoxRailwayElectrification.css";
 import { EffectCube, Pagination } from 'swiper/modules';
 
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
-import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
-import rehau from "../assets/images/rehau.png";
-import edacec from "../assets/images/edacec.png";
-import stemmann from "../assets/images/stemmann.png";
-import cembre from "../assets/images/cembre.png";
+
+// import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
+// import rehau from "../assets/images/rehau.png";
+// import edacec from "../assets/images/edacec.png";
+// import stemmann from "../assets/images/stemmann.png";
+// import cembre from "../assets/images/cembre.png";
 
 
 
@@ -40,7 +41,7 @@ import cembre from "../assets/images/cembre.png";
                 <label className="detail">
                   {t("overheadcatenarysystems_detail")}
                 </label>
-                <img src={rpsrailpowersystem} alt="bg" className="img" />
+                {/* <img src={rpsrailpowersystem} alt="bg" className="img" /> */}
               </div>
               <div className="BoxRailwayElectrification-product-item-footer"></div>
             </div>
@@ -51,7 +52,7 @@ import cembre from "../assets/images/cembre.png";
               <div className="BoxRailwayElectrification-product-item">
                 <label className="header">{t("thirdrailsystems")}</label>
                 <label className="detail">{t("thirdrailsystems_detail")}</label>
-                <img src={rehau} alt="bg" className="img" />
+                {/* <img src={rehau} alt="bg" className="img" /> */}
               </div>
               <div className="BoxRailwayElectrification-product-item-footer"></div>
             </div>
@@ -65,7 +66,7 @@ import cembre from "../assets/images/cembre.png";
                   {t("tractionsubstations_detail1")}{" "}
                   {t("tractionsubstations_detail2")}
                 </label>
-                <img src={edacec} alt="bg" className="img" />
+                {/* <img src={edacec} alt="bg" className="img" /> */}
               </div>
               <div className="BoxRailwayElectrification-product-item-footer"></div>
             </div>
@@ -78,7 +79,7 @@ import cembre from "../assets/images/cembre.png";
                 <label className="detail">
                   {t("tractionsubstations_detail3")}
                 </label>
-                <img src={stemmann} alt="bg" className="img" />
+                {/* <img src={stemmann} alt="bg" className="img" /> */}
               </div>
               <div className="BoxRailwayElectrification-product-item-footer"></div>
             </div>
@@ -91,7 +92,7 @@ import cembre from "../assets/images/cembre.png";
                 <label className="detail">
                   {t("auxiliarycomponents_detail")}
                 </label>
-                <img src={cembre} alt="bg" className="img" />
+                {/* <img src={cembre} alt="bg" className="img" /> */}
               </div>
               <div className="BoxRailwayElectrification-product-item-footer"></div>
             </div>

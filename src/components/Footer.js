@@ -20,18 +20,18 @@ const Footer = () => {
           <label className="item1-detail">{t("address1")}</label>
           <label className="item1-detail">{t("address2")}</label>
 
-          <div className="footer-items social">
+          {/* <div className="footer-items social">
             <img className="footer-img-left" src={twitter} alt="twitter Mainline Asia " />
             <img className="footer-img-left" src={linkedin} alt="linkedin Mainline Asia " />
             <img className="footer-img-left" src={facebook} alt="facebook Mainline Asia " />
-          </div>
+          </div> */}
         </div>
 
         <div className="footer-items item2">
           <div style={{ display: "flex", paddingBottom: "10px" }}>
             <img className="footer-img-right" src={phone} alt="phone Mainline Asia " />
             <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
-              +66 656838126
+            +66 803811160 (คุณสุดใจ)
             </label>
           </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
           <div style={{ display: "flex", paddingBottom: "10px" }}>
             <img className="footer-img-right" src={map} alt="map Mainline Asia " />
             <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
-              www.mainlineasia.co.th
+            www.mainline-asia.com
             </label>
           </div>
         </div>

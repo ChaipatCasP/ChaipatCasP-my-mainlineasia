@@ -1,7 +1,6 @@
 import "./ContactUs.css";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
-
 import twitter from "../assets/icon/twitter-b.png";
 import linkedin from "../assets/icon/linkedin-b.png";
 import facebook from "../assets/icon/facebook-b.png";
@@ -50,49 +49,65 @@ const ContactUs = () => {
                 textUnderlinePosition: "unset",
               }}
             >
-              <label className="my-text" style={{ color: "white", fontWeight: "bold" }}>
+              <label
+                className="my-text"
+                style={{ color: "white", fontWeight: "bold" }}
+              >
                 Mainline{" "}
               </label>
-              <label className="my-text" style={{ color: "red", fontWeight: "bold" }}> Asia</label>
+              <label
+                className="my-text"
+                style={{ color: "red", fontWeight: "bold" }}
+              >
+                {" "}
+                Asia
+              </label>
             </div>
           </div>
 
           <div className="footer-contact">
-            <label className="item1-header my-text">Mainline Asia Co.,Ltd</label>
-            <label className="item1-detail my-text">
-              {t("address1")}
+            <label className="item1-header my-text">
+              Mainline Asia Co.,Ltd
             </label>
-            <label className="item1-detail my-text">
-              {t("address2")}
-            </label>
+            <label className="item1-detail my-text">{t("address1")}</label>
+            <label className="item1-detail my-text">{t("address2")}</label>
           </div>
 
           <div className="footer-contact">
             <div style={{ display: "flex", paddingBottom: "10px" }}>
               <img className="footer-img-right" src={phone} alt="phone" />
-              <label className='my-text' style={{ paddingTop: "2px", paddingLeft: "10px" }}>
-                +66 656838126
+              <label
+                className="my-text"
+                style={{ paddingTop: "2px", paddingLeft: "10px" }}
+              >
+                +66 803811160 (คุณสุดใจ)
               </label>
             </div>
 
-            <div className='my-text' style={{ display: "flex", paddingBottom: "10px" }}>
+            <div
+              className="my-text"
+              style={{ display: "flex", paddingBottom: "10px" }}
+            >
               <img className="footer-img-right" src={mail} alt="mail" />
               <label style={{ paddingTop: "1px", paddingLeft: "10px" }}>
                 mainline_asia@hotmail.com
               </label>
             </div>
 
-            <div className='my-text' style={{ display: "flex", paddingBottom: "10px" }}>
+            <div
+              className="my-text"
+              style={{ display: "flex", paddingBottom: "10px" }}
+            >
               <img className="footer-img-right" src={map} alt="map" />
               <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
-                www.mainlineasia.co.th
+                www.mainline-asia.com
               </label>
             </div>
           </div>
 
-          <h4 className='FollowUs'>Follow Us</h4>
+          {/* <h4 className='FollowUs'>Follow Us</h4> */}
 
-          <div className="social-item">
+          {/* <div className="social-item">
             <img
               className="social-img"
               src={twitter}
@@ -111,9 +126,8 @@ const ContactUs = () => {
               alt="facebook"
               href="https://twitter.com"
             />
-          </div>
+          </div> */}
         </div>
-
       </div>
     </div>
   );

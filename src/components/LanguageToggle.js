@@ -10,6 +10,17 @@ const LanguageToggle = ({ changeLanguage, toggleMenu }) => {
   const [selectedLang, setSelectedLang] = useState(i18n.language || "en");
 
   useEffect(() => {
+    const preloadImages = () => {
+      [img_en, img_th].forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+    preloadImages();
+  }, []);
+
+
+  useEffect(() => {
     setSelectedLang(i18n.language || "en");
   }, [i18n.language]);
 

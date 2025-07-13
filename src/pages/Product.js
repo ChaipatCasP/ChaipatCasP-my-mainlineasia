@@ -52,7 +52,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
 
               <div className="product-footer-item-img">
-                <img src={rpsrailpowersystem} alt="bg" className="img" />
+                {/* <img src={rpsrailpowersystem} alt="bg" className="img" /> */}
               </div>
             </div>
 
@@ -63,7 +63,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
 
               <div className="product-footer-item-img img">
-                <img src={rehau} alt="bg" className="img" />
+                {/* <img src={rehau} alt="bg" className="img" /> */}
               </div>
             </div>
 
@@ -77,7 +77,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
 
               <div className="product-footer-item-img img">
-                <img src={edacec} alt="bg" className="img" />
+                {/* <img src={edacec} alt="bg" className="img" /> */}
               </div>
             </div>
 
@@ -90,7 +90,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
 
               <div className="product-footer-item-img img">
-                <img src={stemmann} alt="bg" className="img" />
+                {/* <img src={stemmann} alt="bg" className="img" /> */}
               </div>
             </div>
 
@@ -103,7 +103,7 @@ import iCabinet from "../assets/images/iCabinet.png";
               </div>
 
               <div className="product-footer-item-img img">
-                <img src={cembre} alt="bg" className="img" />
+                {/* <img src={cembre} alt="bg" className="img" /> */}
               </div>
             </div>
           </div>
