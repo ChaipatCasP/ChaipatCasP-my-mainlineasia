@@ -2,11 +2,11 @@ import React from "react";
 import "./Product.css";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
-import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
-import rehau from "../assets/images/rehau.png";
-import edacec from "../assets/images/edacec.png";
-import stemmann from "../assets/images/stemmann.png";
-import cembre from "../assets/images/cembre.png";
+// import rpsrailpowersystem from "../assets/images/rpsrailpowersystem.png";
+// import rehau from "../assets/images/rehau.png";
+// import edacec from "../assets/images/edacec.png";
+// import stemmann from "../assets/images/stemmann.png";
+// import cembre from "../assets/images/cembre.png";
 
 import Pantograph from "../assets/images/Pantograph.png";
 import MasterController from "../assets/images/MasterController.png";

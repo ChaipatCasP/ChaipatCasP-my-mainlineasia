@@ -1,9 +1,9 @@
 import "./ContactUs.css";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 
-import twitter from "../assets/icon/twitter-b.png";
-import linkedin from "../assets/icon/linkedin-b.png";
-import facebook from "../assets/icon/facebook-b.png";
+// import twitter from "../assets/icon/twitter-b.png";
+// import linkedin from "../assets/icon/linkedin-b.png";
+// import facebook from "../assets/icon/facebook-b.png";
 import phone from "../assets/icon/viber.png";
 import mail from "../assets/icon/email.png";
 import map from "../assets/icon/map.png";

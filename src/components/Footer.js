@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 import "../components/Footer.css";
-import twitter from "../assets/icon/ant-design_twitter-outlined.png";
-import linkedin from "../assets/icon/ant-design_linkedin-filled.png";
-import facebook from "../assets/icon/ant-design_facebook-filled.png";
+// import twitter from "../assets/icon/ant-design_twitter-outlined.png";
+// import linkedin from "../assets/icon/ant-design_linkedin-filled.png";
+// import facebook from "../assets/icon/ant-design_facebook-filled.png";
 
 import phone from "../assets/icon/ant-design_phone.png";
 import mail from "../assets/icon/ant-design_mail.png";
