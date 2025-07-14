@@ -48,11 +48,23 @@ const LanguageToggle = ({ changeLanguage, toggleMenu }) => {
 
   return (
     <Dropdown overlay={menu} trigger={["click"]}>
-      <Space className="language-toggle">
+      {/* <Space className="language-toggle">
         <img src={languages.find((lang) => lang.key === selectedLang)?.img} alt={selectedLang} className="language-img" style={{ width: 20 }} />
         {languages.find((lang) => lang.key === selectedLang)?.label}
         <DownOutlined />
+      </Space> */}
+
+      <Space className="language-toggle">
+        <img
+          src={languages.find((lang) => lang.key === selectedLang)?.img || img_en}
+          alt={selectedLang}
+          className="language-img"
+          style={{ width: 20 }}
+        />
+        {languages.find((lang) => lang.key === selectedLang)?.label || "English"}
+        <DownOutlined />
       </Space>
+
     </Dropdown>
   );
 };

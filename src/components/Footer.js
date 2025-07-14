@@ -38,7 +38,7 @@ const Footer = () => {
           <div style={{ display: "flex", paddingBottom: "10px" }}>
             <img className="footer-img-right" src={mail} alt="mail Mainline Asia " />
             <label style={{ paddingTop: "2px", paddingLeft: "10px" }}>
-              mainline_asia@hotmail.com
+              info@mainline-asia.com
             </label>
           </div>
 

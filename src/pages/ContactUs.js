@@ -90,7 +90,7 @@ const ContactUs = () => {
             >
               <img className="footer-img-right" src={mail} alt="mail" />
               <label style={{ paddingTop: "1px", paddingLeft: "10px" }}>
-                mainline_asia@hotmail.com
+                info@mainline-asia.com
               </label>
             </div>
 
