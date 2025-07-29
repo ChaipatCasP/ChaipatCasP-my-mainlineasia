@@ -15,8 +15,6 @@ import Picture6 from "../assets/aboutusbanner/Picture6.jpg";
 import Picture7 from "../assets/aboutusbanner/Picture7.png";
 import Picture8 from "../assets/aboutusbanner/Picture8.jpg";
 import Picture9 from "../assets/aboutusbanner/Picture9.png";
-import Picture10 from "../assets/aboutusbanner/Picture10.jpg";
-
 
 export default function BoxActivity() {
     const progressCircle = useRef(null);
@@ -52,7 +50,6 @@ export default function BoxActivity() {
         <SwiperSlide><img src={Picture7} alt="bg" /></SwiperSlide>
         <SwiperSlide><img src={Picture8} alt="bg" /></SwiperSlide>
         <SwiperSlide><img src={Picture9} alt="bg" /></SwiperSlide>
-        <SwiperSlide><img src={Picture10} alt="bg" /></SwiperSlide>
       
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
