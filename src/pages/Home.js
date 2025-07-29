@@ -67,7 +67,7 @@ const Home = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={electric} alt="card" className="card-img" />
+                <img src={lighting} alt="card" className="card-img" />
               </div>
               <div style={{ padding: "10px" }}>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
@@ -83,7 +83,7 @@ const Home = () => {
                 </label>
               </div>
               <div style={{ paddingTop: "30px" }}>
-                <img src={lighting} alt="card" className="card-img" />
+                <img src={electric} alt="card" className="card-img" />
               </div>
               <div style={{ padding: "10px" }}>
                 <label style={{ fontSize: "14px", fontWeight: "400" }}>
