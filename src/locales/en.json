@@ -82,5 +82,17 @@
   "RobustEVChargingNetworks_detail4": "• Green Energy Integration: Options for on-site solar or wind power to reduce carbon footprint.",
   "RobustEVChargingNetworks_detail5": "• Tailored Implementations: Urban, highway, and fleet charging solutions for diverse customer requirements.",
   "address1": "425 Kamphaeng Phet Rd. 6, Don Mueang,",
-  "address2": "Don Mueang District, Bangkok 10210, Thailand"
+  "address2": "Don Mueang District, Bangkok 10210, Thailand",
+  "engineeringAndDesigh": "Engineering & Design",
+  "engineeringAndDesigh_Details1": " • Simulation Studies & System Integration: Utilizing advanced software tools for simulations with running trains and network calculations.",
+  "engineeringAndDesigh_Details2": " • Railway Power Supply Layouts: Comprehensive design of a.c. and d.c. power supply systems for mass transit and main lines.",
+  "engineeringAndDesigh_Details3": " • Electrical Network Analysis: Load flow, short circuit calculations, and harmonic analysis for three-phase current networks in auxiliary systems.",
+  "TurnkeyProject": "Turnkey Project",
+  "TurnkeyProject_Details1": " • Expert Implementation: On-site deployment by skilled professionals, minimizing disruptions and ensuring timely handover.",
+  "TurnkeyProject_Details2": " • Quality Assurance: Rigorous testing and validation of equipment and systems to align with performance targets.",
+  "TurnkeyProject_Details3": " • Handover & Training: Providing in-depth user training and documentation for seamless operational transition.",
+  "maintenance": "Maintenance",
+  "maintenance_Details1": " • 24/7 Support & Monitoring: Real-time system surveillance and diagnostics for rapid issue resolution.",
+  "maintenance_Details2": " • Predictive Maintenance: Using analytics and IoT sensors to anticipate wear, minimize downtime, and extend equipment life.",
+  "maintenance_Details3": " • Performance Optimization: Continuous adjustments to improve system efficiency, reliability, and ROI."
 }

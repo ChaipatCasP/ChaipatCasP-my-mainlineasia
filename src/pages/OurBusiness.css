@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(170deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
+  background: linear-gradient(60deg, rgba(36, 40, 82, 1), rgba(36, 40, 82, 0.1));
 }
 
 .ourbusiness-container .ourbusiness-header {
@@ -10,6 +10,14 @@
   width: 100%;
   font-size: 20px;
   padding-top: 100px;
+  text-align: center;
+}
+
+.ourbusiness-container .ourbusiness-header2 {
+  border-radius: 10px;
+  width: 100%;
+  font-size: 20px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -162,6 +170,17 @@
   width: 100%;
   height: 85%;
 
+}
+
+.footerHeader {
+  padding: 0 30px 5px 30px;
+  color: rgba(74, 102, 172, 1);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.footerDetails {
+  padding: 0 30px 5px 30px;
 }
 
 .ourbusiness-details {

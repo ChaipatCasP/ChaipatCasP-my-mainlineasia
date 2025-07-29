@@ -63,6 +63,12 @@
 
 }
 
+.footer-items.item2 {
+  display: flex;
+  flex-direction: column; /* ค่าเริ่มต้นเป็นแนวตั้ง */
+  gap: 10px; /* เพิ่มช่องว่างระหว่างแต่ละรายการ */
+}
+
 
 @media (max-width: 768px) {
   
@@ -136,6 +142,22 @@
     flex-wrap: nowrap;
    justify-content: space-evenly;
   
+  }
+
+  .footer-items.item2 {
+    flex-direction: row; /* เปลี่ยนเป็นแนวนอน */
+    flex-wrap: wrap; /* ให้รายการที่เกินไปขึ้นบรรทัดใหม่ */
+    justify-content: space-between; /* กระจายรายการให้มีระยะห่าง */
+    gap: 15px; /* เพิ่มช่องว่างระหว่างรายการ */
+  }
+
+  .footer-items.item2 > div {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  }
+
+  .footer-img-right {
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างไอคอนกับข้อความ */
   }
 
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./OurBusiness.css";
 import { useTranslation } from "react-i18next"; // หากใช้ i18next
 import vector1 from "../assets/images/Vector-1.png";
@@ -11,7 +11,6 @@ const OurBusiness = () => {
 
   return (
     <div className="ourbusiness-container">
-
       <div className="ourbusiness-header">
         <div>
           <label className="ourbusiness-header-header">
@@ -34,6 +33,73 @@ const OurBusiness = () => {
 
           <div style={{ paddingBottom: "10px" }}>
             <label>{t("ourbusiness_detail4")}</label>
+          </div>
+        </div>
+      </div>
+
+      <div className="ourbusiness-header2">
+       
+        <div>
+          <label className="ourbusiness-header-header">
+            {t("engineeringAndDesigh")}
+          </label>
+        </div>
+
+        <div className="ourbusiness-header-details">
+          <div style={{ paddingBottom: "25px" }}>
+            <label>{t("engineeringAndDesigh_Details1")}</label>
+          </div>
+
+          <div style={{ paddingBottom: "25px" }}>
+            <label>{t("engineeringAndDesigh_Details2")}</label>
+          </div>
+
+          <div>
+            <label>{t("engineeringAndDesigh_Details3")}</label>
+          </div>
+        </div>
+      </div>
+
+      <div className="ourbusiness-header2">
+        <div>
+          <label className="ourbusiness-header-header">
+            {t("TurnkeyProject")}
+          </label>
+        </div>
+
+        <div className="ourbusiness-header-details">
+          <div style={{ paddingBottom: "25px" }}>
+            <label>{t("TurnkeyProject_Details1")}</label>
+          </div>
+
+          <div style={{ paddingBottom: "25px" }}>
+            <label>{t("TurnkeyProject_Details2")}</label>
+          </div>
+
+          <div>
+            <label>{t("TurnkeyProject_Details3")}</label>
+          </div>
+        </div>
+      </div>
+
+      <div className="ourbusiness-header2">
+        <div>
+          <label className="ourbusiness-header-header">
+            {t("maintenance")}
+          </label>
+        </div>
+
+        <div className="ourbusiness-header-details">
+          <div style={{ paddingBottom: "25px" }}>
+            <label>{t("maintenance_Details1")}</label>
+          </div>
+
+          <div style={{ paddingBottom: "25px" }}>
+            <label>{t("maintenance_Details2")}</label>
+          </div>
+
+          <div>
+            <label>{t("maintenance_Details3")}</label>
           </div>
         </div>
       </div>
@@ -95,8 +161,6 @@ const OurBusiness = () => {
           </Link>
         </div>
       </div>
-
-
     </div>
   );
 };

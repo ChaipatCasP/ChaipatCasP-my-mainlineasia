@@ -16,12 +16,31 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
+  height: 100%; /* ให้ body ครอบคลุมความสูงทั้งหมด */
+}
+
+html {
+  height: 100%; /* ให้ html ครอบคลุมความสูงทั้งหมด */
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh; /* ครอบคลุมความสูงของหน้าจอ */
+}
+
+
+main {
+  flex: 1; /* ดันเนื้อหาให้อยู่ตรงกลาง */
+  width: 100%; /* ให้ main ครอบคลุมความกว้าง */
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%; /* ให้ footer ครอบคลุมความกว้าง */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
 }
 
 /* Page section styling */

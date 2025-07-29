@@ -32,18 +32,20 @@ const App = () => {
     <Router>
       <div className="app">
         <Header key={i18n.language} />
-        <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/about-railway" element={<AboutUsRailway />} />
-            <Route path="/business" element={<OurBusiness />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/projects" element={<ProjectReferences />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/contact" element={<ContactUs />} />
-          </Routes>
-        </Suspense>
+        <main>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/about-railway" element={<AboutUsRailway />} />
+              <Route path="/business" element={<OurBusiness />} />
+              <Route path="/product" element={<Product />} />
+              <Route path="/projects" element={<ProjectReferences />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/contact" element={<ContactUs />} />
+            </Routes>
+          </Suspense>
+        </main>
         <Footer />
       </div>
     </Router>
