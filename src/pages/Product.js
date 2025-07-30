@@ -83,7 +83,7 @@ const Product = () => {
 
           <div className="container-1-product-item">
             <div className="product-footer-item-txt">
-              <label className="header">{t("tractionsubstations")}</label>
+              <label className="header">{t("stingerSystems")}</label>
               <label className="detail">
                 {t("tractionsubstations_detail3")}
               </label>

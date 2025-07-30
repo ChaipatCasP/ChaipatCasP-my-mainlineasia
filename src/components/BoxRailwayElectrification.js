@@ -75,7 +75,7 @@ import { useTranslation } from "react-i18next"; // หากใช้ i18next
           <SwiperSlide>
             <div className="BoxRailwayElectrification-product-items">
               <div className="BoxRailwayElectrification-product-item">
-                <label className="header">{t("tractionsubstations")}</label>
+                <label className="header">{t("stingerSystems")}</label>
                 <label className="detail">
                   {t("tractionsubstations_detail3")}
                 </label>
