@@ -4,6 +4,11 @@ import { useTranslation } from "react-i18next"; // หากใช้ i18next
 import vector1 from "../assets/images/Vector-1.png";
 import vector2 from "../assets/images/Vector-2.png";
 import vector3 from "../assets/images/Vector-3.png";
+import pdf5 from "../assets/images/pdf5.jpg"; 
+import pdf6 from "../assets/images/pdf6.jpg"; 
+import pdf7 from "../assets/images/pdf7.jpg"; 
+import pdf8 from "../assets/images/pdf8.jpg"; 
+import pdf9 from "../assets/images/pdf9.jpg"; 
 import { Link } from "react-router-dom";
 
 const OurBusiness = () => {
@@ -161,6 +166,16 @@ const OurBusiness = () => {
           </Link>
         </div>
       </div>
+
+
+      <div className="ourbusiness-bottom-image" style={{ textAlign: "center", padding: "20px" }}>
+        <img src={pdf5} alt="pdf5" style={{ maxWidth: "100%", height: "auto" }} />
+        <img src={pdf6} alt="pdf5" style={{ maxWidth: "100%", height: "auto" }} />
+        <img src={pdf7} alt="pdf5" style={{ maxWidth: "100%", height: "auto" }} />
+        <img src={pdf8} alt="pdf5" style={{ maxWidth: "100%", height: "auto" }} />
+        <img src={pdf9} alt="pdf5" style={{ maxWidth: "100%", height: "auto" }} />
+      </div>
+
     </div>
   );
 };
